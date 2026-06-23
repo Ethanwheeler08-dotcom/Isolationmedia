@@ -9,15 +9,18 @@
   /* ---------- Loader ---------- */
   var loader = document.getElementById("loader");
   var loaderCount = document.getElementById("loaderCount");
+  var loaderFill = document.getElementById("loaderFill");
+  function pad2(n) { return n < 10 ? "0" + n : "" + n; }
   function runLoader() {
     if (!loader) return;
     if (reduceMotion) { finishLoader(); return; }
     var n = 0;
     var tick = setInterval(function () {
-      n += Math.floor(Math.random() * 12) + 4;
-      if (n >= 100) { n = 100; clearInterval(tick); setTimeout(finishLoader, 250); }
-      if (loaderCount) loaderCount.textContent = n;
-    }, 90);
+      n += Math.floor(Math.random() * 11) + 4;
+      if (n >= 100) { n = 100; clearInterval(tick); setTimeout(finishLoader, 280); }
+      if (loaderCount) loaderCount.textContent = pad2(n);
+      if (loaderFill) loaderFill.style.width = n + "%";
+    }, 85);
   }
   function finishLoader() {
     if (loader) loader.classList.add("done");
@@ -99,14 +102,17 @@
     var target = parseFloat(el.getAttribute("data-count")) || 0;
     var prefix = el.getAttribute("data-prefix") || "";
     var suffix = el.getAttribute("data-suffix") || "";
-    if (reduceMotion) { el.innerHTML = prefix + target + '<span class="u">' + suffix + "</span>"; return; }
-    var start = null, dur = 1600;
+    var decimals = parseInt(el.getAttribute("data-decimals"), 10) || 0;
+    function render(v) {
+      return prefix + v.toFixed(decimals) + '<span class="u">' + suffix + "</span>";
+    }
+    if (reduceMotion) { el.innerHTML = render(target); return; }
+    var start = null, dur = 1700;
     function step(ts) {
       if (!start) start = ts;
       var p = Math.min((ts - start) / dur, 1);
       var eased = 1 - Math.pow(1 - p, 3);
-      var val = Math.round(target * eased);
-      el.innerHTML = prefix + val + '<span class="u">' + suffix + "</span>";
+      el.innerHTML = render(target * eased);
       if (p < 1) requestAnimationFrame(step);
     }
     requestAnimationFrame(step);

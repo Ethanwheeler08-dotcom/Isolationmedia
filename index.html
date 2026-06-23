@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Isolation Media · Paid Ads &amp; SEO · London</title>
-  <meta name="description" content="Isolation Media is a London paid-advertising and SEO agency. We isolate what works, kill what doesn't, and scale the rest. Bold, aggressive, relevant, superior." />
+  <title>Isolation Media — Paid Ads &amp; SEO, London</title>
+  <meta name="description" content="Isolation Media is a London paid-ads and SEO studio for founders who care about the bank balance, not the dashboard. We isolate what sells and scale it." />
   <meta name="theme-color" content="#0F0E0C" />
   <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/img/brand/avatar/favicon-ink.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Isolation Media · Paid Ads &amp; SEO · London" />
-  <meta property="og:description" content="We isolate what works, kill what doesn't, and scale the rest. London paid ads &amp; SEO." />
+  <meta property="og:title" content="Isolation Media — Paid Ads &amp; SEO, London" />
+  <meta property="og:description" content="A London paid-ads and SEO studio for founders who care about the bank balance, not the dashboard." />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:site_name" content="Isolation Media" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="preload" href="assets/fonts/Montreal-Medium.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="assets/fonts/FranklinGothic-Book.otf" as="font" type="font/otf" crossorigin />
@@ -24,11 +28,14 @@
 
 <!-- Loader -->
 <div class="loader" id="loader" aria-hidden="true">
-  <div class="loader__mark">
-    <span class="loader__dot"></span>
-    <span class="loader__stem"></span>
+  <div class="loader__row">
+    <span class="loader__mark" aria-hidden="true">
+      <span class="loader__dot"></span><span class="loader__stem"></span>
+    </span>
+    <span class="loader__word">isolation<span class="loader__period">.</span></span>
   </div>
-  <div class="loader__count"><span id="loaderCount">0</span><span class="loader__pct">%</span></div>
+  <div class="loader__bar"><span id="loaderFill" class="loader__fill"></span></div>
+  <div class="loader__count"><span id="loaderCount">00</span> — 100</div>
 </div>
 
 <!-- Header -->
@@ -40,20 +47,16 @@
         <span class="brand__stem"></span>
       </span>
       <span class="brand__word">isolation<span class="brand__period">.</span></span>
-      <span class="brand__sub">MEDIA</span>
     </a>
 
     <nav class="nav__links" aria-label="Primary">
-      <a href="#work" class="nav__link">Work</a>
-      <a href="#services" class="nav__link">Services</a>
-      <a href="#process" class="nav__link">Process</a>
-      <a href="#about" class="nav__link">About</a>
+      <a href="#work" class="nav__link"><span>01</span> Work</a>
+      <a href="#services" class="nav__link"><span>02</span> Services</a>
+      <a href="#process" class="nav__link"><span>03</span> Process</a>
+      <a href="#studio" class="nav__link"><span>04</span> Studio</a>
     </nav>
 
-    <a href="#contact" class="btn btn--signal nav__cta">
-      <span>Start a project</span>
-      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
+    <a href="#contact" class="nav__cta">Start a project</a>
 
     <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span>
@@ -63,14 +66,14 @@
 
 <!-- Mobile menu -->
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#work" class="mobile-menu__link">Work</a>
-  <a href="#services" class="mobile-menu__link">Services</a>
-  <a href="#process" class="mobile-menu__link">Process</a>
-  <a href="#about" class="mobile-menu__link">About</a>
+  <a href="#work" class="mobile-menu__link"><i>01</i> Work</a>
+  <a href="#services" class="mobile-menu__link"><i>02</i> Services</a>
+  <a href="#process" class="mobile-menu__link"><i>03</i> Process</a>
+  <a href="#studio" class="mobile-menu__link"><i>04</i> Studio</a>
   <a href="#contact" class="btn btn--signal mobile-menu__cta">Start a project</a>
   <div class="mobile-menu__meta">
     <a href="mailto:hello@isolationmedia.co.uk">hello@isolationmedia.co.uk</a>
-    <span>London, United Kingdom</span>
+    <span>London, UK</span>
   </div>
 </div>
 
@@ -78,67 +81,79 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero__noise" aria-hidden="true"></div>
+    <span class="hero__grain" aria-hidden="true"></span>
+
+    <div class="hero__meta hero__meta--left" aria-hidden="true">
+      <span>(London, UK)</span>
+      <span>Est. 2026</span>
+    </div>
+    <div class="hero__meta hero__meta--right" aria-hidden="true">
+      <span>Paid ads</span>
+      <span>SEO</span>
+    </div>
+
     <div class="hero__inner">
-      <p class="hero__eyebrow reveal">
-        <span class="dot"></span> Paid Ads &amp; SEO — London, United Kingdom
-      </p>
+      <p class="hero__eyebrow reveal">Paid ads &amp; SEO — a London performance studio</p>
       <h1 class="hero__title">
-        <span class="line"><span class="line__in">Isolate</span></span>
-        <span class="line"><span class="line__in">what <em>works<span class="signal-dot">.</span></em></span></span>
+        <span class="line"><span class="line__in">We isolate</span></span>
+        <span class="line"><span class="line__in">what <span class="ser">actually</span></span></span>
+        <span class="line"><span class="line__in">sells<span class="signal-dot">.</span></span></span>
       </h1>
-      <p class="hero__lede reveal">
-        We're not a marketing agency. We're a performance unit. We isolate the channels,
-        creatives and keywords that actually move money — then scale them without mercy.
-      </p>
-      <div class="hero__actions reveal">
-        <a href="#contact" class="btn btn--signal btn--lg">
-          <span>Start a project now</span>
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#work" class="btn btn--ghost btn--lg">See the work</a>
+      <div class="hero__bottom">
+        <p class="hero__lede reveal">
+          For founders who'd rather watch the bank balance move than the dashboard. We pull
+          your ad accounts and search apart, find the handful of things driving the money,
+          and put everything behind them.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--signal btn--lg">
+            <span>Start a project</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#work" class="btn btn--ghost btn--lg">See the work</a>
+        </div>
       </div>
     </div>
 
     <a href="#intro" class="hero__scroll" aria-label="Scroll to explore">
-      <span>Scroll to explore</span>
       <span class="hero__scroll-line"></span>
+      <span>Scroll</span>
     </a>
 
     <div class="hero__marquee" aria-hidden="true">
       <div class="hero__marquee-track">
-        <span>Google Ads</span><span class="sep">/</span>
-        <span>Meta Ads</span><span class="sep">/</span>
-        <span>TikTok</span><span class="sep">/</span>
-        <span>Technical SEO</span><span class="sep">/</span>
-        <span>Content</span><span class="sep">/</span>
-        <span>CRO</span><span class="sep">/</span>
-        <span>Google Ads</span><span class="sep">/</span>
-        <span>Meta Ads</span><span class="sep">/</span>
-        <span>TikTok</span><span class="sep">/</span>
-        <span>Technical SEO</span><span class="sep">/</span>
-        <span>Content</span><span class="sep">/</span>
-        <span>CRO</span><span class="sep">/</span>
+        <span>Google Ads</span><span class="star">✦</span>
+        <span>Meta</span><span class="star">✦</span>
+        <span>TikTok</span><span class="star">✦</span>
+        <span>Technical SEO</span><span class="star">✦</span>
+        <span>Content</span><span class="star">✦</span>
+        <span>Landing pages</span><span class="star">✦</span>
+        <span>Google Ads</span><span class="star">✦</span>
+        <span>Meta</span><span class="star">✦</span>
+        <span>TikTok</span><span class="star">✦</span>
+        <span>Technical SEO</span><span class="star">✦</span>
+        <span>Content</span><span class="star">✦</span>
+        <span>Landing pages</span><span class="star">✦</span>
       </div>
     </div>
   </section>
 
   <!-- INTRO -->
   <section class="intro" id="intro">
-    <div class="container">
-      <p class="section-label reveal"><span class="dot"></span> Who we are</p>
+    <div class="container intro__grid">
+      <p class="eyebrow reveal"><i>00</i> The short version</p>
       <h2 class="intro__headline">
-        <span class="reveal-word">At</span> <span class="reveal-word">Isolation</span> <span class="reveal-word">Media,</span>
-        <span class="reveal-word">we</span> <span class="reveal-word">don't</span> <span class="reveal-word">do</span> <span class="reveal-word"><em>vanity</em></span>
-        <span class="reveal-word">metrics.</span> <span class="reveal-word muted">We</span> <span class="reveal-word muted">isolate</span>
-        <span class="reveal-word muted">the</span> <span class="reveal-word muted">levers</span> <span class="reveal-word muted">that</span>
-        <span class="reveal-word muted">turn</span> <span class="reveal-word muted">ad</span> <span class="reveal-word muted">spend</span>
-        <span class="reveal-word muted">into</span> <span class="reveal-word muted">revenue —</span> <span class="reveal-word muted">and</span>
-        <span class="reveal-word muted">we</span> <span class="reveal-word muted">pull</span> <span class="reveal-word muted">them</span>
-        <span class="reveal-word muted">hard<span class="signal-dot">.</span></span>
+        <span class="reveal-word">Most</span> <span class="reveal-word">agencies</span> <span class="reveal-word">sell</span>
+        <span class="reveal-word">you</span> <span class="reveal-word"><span class="ser">activity</span>.</span>
+        <span class="reveal-word">We</span> <span class="reveal-word">only</span> <span class="reveal-word">care</span>
+        <span class="reveal-word">about</span> <span class="reveal-word">the</span> <span class="reveal-word">gap</span>
+        <span class="reveal-word">between</span> <span class="reveal-word">what</span> <span class="reveal-word">goes</span>
+        <span class="reveal-word">in</span> <span class="reveal-word">and</span> <span class="reveal-word">what</span>
+        <span class="reveal-word">comes</span> <span class="reveal-word">out<span class="signal-dot">.</span></span>
       </h2>
-      <div class="intro__foot reveal">
-        <a href="#about" class="link-arrow">Get to know us
+      <div class="intro__aside reveal">
+        <p>Isolation Media is a small, senior team in London. No account managers forwarding emails, no 40-slide decks. Just the people doing the work, talking to you directly.</p>
+        <a href="#studio" class="link-arrow">More about the studio
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
@@ -148,24 +163,24 @@
   <!-- STATS -->
   <section class="stats">
     <div class="container">
-      <div class="stats__grid">
-        <div class="stat reveal">
-          <div class="stat__num" data-count="312" data-suffix="%">0</div>
-          <div class="stat__label">Average ROAS lift in the first 90 days</div>
-        </div>
-        <div class="stat reveal">
-          <div class="stat__num" data-count="18" data-prefix="£" data-suffix="M+">0</div>
-          <div class="stat__label">Ad spend managed &amp; optimised</div>
-        </div>
-        <div class="stat reveal">
-          <div class="stat__num" data-count="47" data-suffix="%">0</div>
-          <div class="stat__label">Average drop in cost per acquisition</div>
-        </div>
-        <div class="stat reveal">
-          <div class="stat__num" data-count="1" data-suffix="st">0</div>
-          <div class="stat__label">Page rankings we build to keep</div>
-        </div>
-      </div>
+      <ul class="stats__row">
+        <li class="stat reveal">
+          <span class="stat__num" data-count="3.1" data-decimals="1" data-suffix="x">0</span>
+          <span class="stat__label">Average return on ad spend within the first quarter</span>
+        </li>
+        <li class="stat reveal">
+          <span class="stat__num" data-count="18" data-prefix="£" data-suffix="M">0</span>
+          <span class="stat__label">Put through the accounts we run, and counting</span>
+        </li>
+        <li class="stat reveal">
+          <span class="stat__num" data-count="47" data-suffix="%">0</span>
+          <span class="stat__label">Typical drop in what a new customer costs to win</span>
+        </li>
+        <li class="stat reveal">
+          <span class="stat__num" data-count="9" data-suffix="/10">0</span>
+          <span class="stat__label">Clients who stay with us past the first year</span>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -173,51 +188,55 @@
   <section class="work" id="work">
     <div class="container">
       <div class="work__head">
-        <div>
-          <p class="section-label reveal"><span class="dot"></span> Selected work</p>
-          <h2 class="work__title reveal">See it <span class="amp">&amp;</span> believe it<span class="signal-dot">.</span></h2>
-        </div>
-        <p class="work__intro reveal">Campaigns we isolated, rebuilt and scaled. Real budgets, real numbers, no fluff.</p>
+        <p class="eyebrow reveal"><i>01</i> Selected work</p>
+        <h2 class="work__title reveal">Proof, <span class="ser">not</span> promises.</h2>
+        <p class="work__note reveal">Real budgets. Real numbers. A few of the accounts we've taken apart and rebuilt.</p>
       </div>
 
-      <div class="work__grid">
-        <a href="#contact" class="case reveal" data-cat="E-commerce">
-          <div class="case__media case__media--1"><span class="case__index">01</span></div>
+      <div class="work__list">
+        <a href="#contact" class="case reveal">
+          <span class="case__no">01</span>
+          <div class="case__media case__media--1"></div>
           <div class="case__body">
-            <span class="case__tag">Paid Social · E-commerce</span>
-            <h3>Halo Activewear</h3>
-            <p>Rebuilt the Meta account from zero — 4.8x ROAS at 6x the spend.</p>
+            <div class="case__row">
+              <h3>Halo Activewear</h3>
+              <span class="case__meta">Paid social · DTC</span>
+            </div>
+            <p>Rebuilt the Meta account from scratch and held a 4.8&times; return while spending six times more.</p>
           </div>
         </a>
-        <a href="#contact" class="case reveal" data-cat="SaaS">
-          <div class="case__media case__media--2"><span class="case__index">02</span></div>
+        <a href="#contact" class="case reveal">
+          <span class="case__no">02</span>
+          <div class="case__media case__media--2"></div>
           <div class="case__body">
-            <span class="case__tag">SEO · SaaS</span>
-            <h3>Loop Finance</h3>
-            <p>From page 4 to position 1 on every money keyword in 7 months.</p>
+            <div class="case__row">
+              <h3>Loop Finance</h3>
+              <span class="case__meta">SEO · Fintech</span>
+            </div>
+            <p>From the fourth page to the top of the results on every term that actually pays — inside seven months.</p>
           </div>
         </a>
-        <a href="#contact" class="case reveal" data-cat="Local">
-          <div class="case__media case__media--3"><span class="case__index">03</span></div>
+        <a href="#contact" class="case reveal">
+          <span class="case__no">03</span>
+          <div class="case__media case__media--3"></div>
           <div class="case__body">
-            <span class="case__tag">Google Ads · Local</span>
-            <h3>Crane &amp; Co.</h3>
-            <p>Cut CPA by 51% and tripled qualified leads across London.</p>
+            <div class="case__row">
+              <h3>Crane &amp; Co.</h3>
+              <span class="case__meta">Google Ads · Trade</span>
+            </div>
+            <p>Halved the cost per lead and tripled the good ones across every London borough they cover.</p>
           </div>
         </a>
-        <a href="#contact" class="case reveal" data-cat="DTC">
-          <div class="case__media case__media--4"><span class="case__index">04</span></div>
+        <a href="#contact" class="case reveal">
+          <span class="case__no">04</span>
+          <div class="case__media case__media--4"></div>
           <div class="case__body">
-            <span class="case__tag">Full-funnel · DTC</span>
-            <h3>Nord Supply</h3>
-            <p>£40k to £310k monthly revenue in two quarters. Same product.</p>
+            <div class="case__row">
+              <h3>Nord Supply</h3>
+              <span class="case__meta">Full funnel · E-com</span>
+            </div>
+            <p>£40k to £310k a month in two quarters. Same product, same margins — different plumbing.</p>
           </div>
-        </a>
-      </div>
-
-      <div class="work__foot reveal">
-        <a href="#contact" class="btn btn--dark btn--lg">Start your campaign
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
     </div>
@@ -227,41 +246,49 @@
   <section class="services" id="services">
     <div class="container">
       <div class="services__head">
-        <p class="section-label light reveal"><span class="dot"></span> What we do</p>
-        <h2 class="services__title reveal">Big budgets, bigger returns<span class="signal-dot">.</span></h2>
+        <p class="eyebrow light reveal"><i>02</i> What we do</p>
+        <h2 class="services__title reveal">Four things, <span class="ser">done</span> properly.</h2>
       </div>
 
       <div class="services__list">
         <article class="service reveal">
           <span class="service__no">01</span>
-          <h3 class="service__name">Paid Advertising</h3>
-          <p class="service__desc">Google, Meta, TikTok &amp; YouTube. We build, test and scale paid media that's accountable to one thing only: profit.</p>
+          <div class="service__main">
+            <h3 class="service__name">Paid advertising</h3>
+            <p class="service__desc">Google, Meta, TikTok and YouTube. Built, tested and scaled against one number: what it returns. Nothing runs that can't justify its place.</p>
+          </div>
           <ul class="service__tags">
-            <li>Google Ads</li><li>Meta Ads</li><li>TikTok</li><li>YouTube</li>
+            <li>Google Ads</li><li>Meta</li><li>TikTok</li><li>YouTube</li>
           </ul>
         </article>
         <article class="service reveal">
           <span class="service__no">02</span>
-          <h3 class="service__name">SEO</h3>
-          <p class="service__desc">Technical, content and authority. We engineer rankings that compound — traffic you own instead of rent.</p>
+          <div class="service__main">
+            <h3 class="service__name">Search &amp; SEO</h3>
+            <p class="service__desc">Technical fixes, content that earns its keep, and authority that compounds. Traffic you own outright instead of renting by the click.</p>
+          </div>
           <ul class="service__tags">
-            <li>Technical SEO</li><li>Content</li><li>Link building</li><li>Local SEO</li>
+            <li>Technical</li><li>Content</li><li>Links</li><li>Local</li>
           </ul>
         </article>
         <article class="service reveal">
           <span class="service__no">03</span>
-          <h3 class="service__name">Creative &amp; CRO</h3>
-          <p class="service__desc">Thumb-stopping ad creative and landing pages built to convert. The asset and the funnel, isolated and optimised.</p>
+          <div class="service__main">
+            <h3 class="service__name">Creative &amp; pages</h3>
+            <p class="service__desc">Ads people actually stop for and landing pages built to convert them. The asset and the funnel, handled in the same room.</p>
+          </div>
           <ul class="service__tags">
-            <li>Ad creative</li><li>Landing pages</li><li>A/B testing</li><li>UX</li>
+            <li>Ad creative</li><li>Landing pages</li><li>Testing</li><li>Copy</li>
           </ul>
         </article>
         <article class="service reveal">
           <span class="service__no">04</span>
-          <h3 class="service__name">Analytics</h3>
-          <p class="service__desc">Server-side tracking, attribution and dashboards. If we can't measure it, we won't claim it.</p>
+          <div class="service__main">
+            <h3 class="service__name">Tracking &amp; reporting</h3>
+            <p class="service__desc">Server-side tracking and honest attribution. If we can't measure it cleanly, we won't take credit for it — and you'll always know where the money went.</p>
+          </div>
           <ul class="service__tags">
-            <li>GA4</li><li>Server-side</li><li>Attribution</li><li>Reporting</li>
+            <li>GA4</li><li>Server-side</li><li>Attribution</li><li>Dashboards</li>
           </ul>
         </article>
       </div>
@@ -272,96 +299,103 @@
   <section class="process" id="process">
     <div class="container">
       <div class="process__head">
-        <p class="section-label reveal"><span class="dot"></span> How we work</p>
-        <h2 class="process__title reveal">Four moves. No wasted spend<span class="signal-dot">.</span></h2>
+        <p class="eyebrow light reveal"><i>03</i> How it works</p>
+        <h2 class="process__title reveal">Isolate. Build. Scale. <span class="ser">Repeat</span>.</h2>
       </div>
     </div>
 
     <div class="process__stack" id="processStack">
       <article class="pcard" style="--i:0">
         <div class="pcard__inner">
-          <span class="pcard__no">01 / Isolate</span>
-          <h3 class="pcard__title">We find what's actually working.</h3>
-          <p class="pcard__text">Deep audit of your accounts, funnel and data. We separate the signal from the noise — the 20% of spend driving 80% of return — and kill the rest.</p>
+          <div class="pcard__top"><span class="pcard__no">01</span><span class="pcard__kind">Isolate</span></div>
+          <div class="pcard__content">
+            <h3 class="pcard__title">First, we find what's<br>actually working.</h3>
+            <p class="pcard__text">A proper look through your accounts, funnel and data. We separate the small slice of spend pulling its weight from the noise around it — and we're honest about what we find.</p>
+          </div>
         </div>
       </article>
       <article class="pcard" style="--i:1">
         <div class="pcard__inner">
-          <span class="pcard__no">02 / Build</span>
-          <h3 class="pcard__title">We rebuild around the winners.</h3>
-          <p class="pcard__text">New account structure, fresh creative, rewritten landing pages and clean tracking. A foundation engineered to scale, not patched together.</p>
+          <div class="pcard__top"><span class="pcard__no">02</span><span class="pcard__kind">Build</span></div>
+          <div class="pcard__content">
+            <h3 class="pcard__title">Then we rebuild<br>around the winners.</h3>
+            <p class="pcard__text">New structure, fresh creative, rewritten pages, clean tracking. A foundation that's meant to be scaled instead of one held together with workarounds.</p>
+          </div>
         </div>
       </article>
       <article class="pcard" style="--i:2">
         <div class="pcard__inner">
-          <span class="pcard__no">03 / Scale</span>
-          <h3 class="pcard__title">We pour fuel on the fire.</h3>
-          <p class="pcard__text">Once the unit economics work, we push budget aggressively and expand into new channels — protecting efficiency the whole way up.</p>
+          <div class="pcard__top"><span class="pcard__no">03</span><span class="pcard__kind">Scale</span></div>
+          <div class="pcard__content">
+            <h3 class="pcard__title">Once it pays,<br>we push hard.</h3>
+            <p class="pcard__text">When the numbers hold, budget goes up and we move into new channels — watching efficiency the whole way so growth doesn't come at the cost of margin.</p>
+          </div>
         </div>
       </article>
       <article class="pcard" style="--i:3">
         <div class="pcard__inner">
-          <span class="pcard__no">04 / Compound</span>
-          <h3 class="pcard__title">We make the gains permanent.</h3>
-          <p class="pcard__text">SEO authority and owned audiences that keep paying out long after the ad spend stops. Growth that stacks instead of resetting.</p>
+          <div class="pcard__top"><span class="pcard__no">04</span><span class="pcard__kind">Repeat</span></div>
+          <div class="pcard__content">
+            <h3 class="pcard__title">And we make the<br>gains stick.</h3>
+            <p class="pcard__text">SEO and owned audiences that keep paying out long after a campaign ends. Every cycle starts further ahead than the last.</p>
+          </div>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container about__grid">
-      <div class="about__left">
-        <p class="section-label reveal"><span class="dot"></span> About</p>
-        <h2 class="about__title reveal">Bold. Aggressive. Relevant. <span class="signal">Superior.</span></h2>
+  <!-- STUDIO / ABOUT -->
+  <section class="studio" id="studio">
+    <div class="container studio__grid">
+      <div class="studio__left">
+        <p class="eyebrow reveal"><i>04</i> The studio</p>
+        <h2 class="studio__title reveal">Small team.<br><span class="ser">Loud</span> results.</h2>
+        <p class="studio__quote reveal">We named ourselves after the one thing most agencies never do — isolate the variable that's actually moving the numbers, instead of throwing more at the wall.</p>
       </div>
-      <div class="about__right">
-        <p class="about__lead reveal">Isolation Media is a London performance agency for brands that are done with agencies who hide behind reports. We exist to do one thing brutally well: turn budget into growth you can bank.</p>
-        <p class="reveal">No bloated retainers for work that doesn't move the needle. No vanity dashboards. We isolate what works, scale it hard, and stay relentlessly accountable to the only metric that matters — your return.</p>
-        <div class="about__pillars">
-          <div class="pillar reveal"><span class="pillar__k">Bold</span><span class="pillar__v">We make the calls others won't.</span></div>
-          <div class="pillar reveal"><span class="pillar__k">Aggressive</span><span class="pillar__v">We scale winners without flinching.</span></div>
-          <div class="pillar reveal"><span class="pillar__k">Relevant</span><span class="pillar__v">Right message, right person, right now.</span></div>
-          <div class="pillar reveal"><span class="pillar__k">Superior</span><span class="pillar__v">Outwork, outthink, outperform.</span></div>
-        </div>
+      <div class="studio__right">
+        <p class="studio__lead reveal">Isolation Media is a London performance studio for businesses that are done being a line item on someone's retainer. We're built to be direct, fast and a little bit relentless about results.</p>
+        <p class="reveal">No bloated team you never meet. No reports designed to look busy. You work with the people running your accounts, you see exactly what we see, and we stake our reputation on the only number that matters to you.</p>
+
+        <dl class="studio__facts">
+          <div class="fact reveal"><dt>Based</dt><dd>London, United Kingdom</dd></div>
+          <div class="fact reveal"><dt>Focus</dt><dd>Paid media &amp; SEO</dd></div>
+          <div class="fact reveal"><dt>Clients</dt><dd>DTC, fintech, trade, B2B</dd></div>
+          <div class="fact reveal"><dt>Working with</dt><dd>5 partners at a time</dd></div>
+        </dl>
       </div>
     </div>
   </section>
 
   <!-- LOGOS MARQUEE -->
   <section class="logos">
-    <p class="logos__label">Trusted by ambitious brands across the UK</p>
+    <p class="logos__label">A few of the brands we've grown</p>
     <div class="logos__marquee" aria-hidden="true">
       <div class="logos__track">
-        <span>HALO</span><span>LOOP</span><span>NORD</span><span>CRANE&amp;CO</span><span>VERTEX</span><span>MERIDIAN</span><span>ATLAS</span><span>KIN</span>
-        <span>HALO</span><span>LOOP</span><span>NORD</span><span>CRANE&amp;CO</span><span>VERTEX</span><span>MERIDIAN</span><span>ATLAS</span><span>KIN</span>
+        <span>HALO</span><span class="logos__sep">/</span><span>LOOP</span><span class="logos__sep">/</span><span>NORD</span><span class="logos__sep">/</span><span>CRANE&amp;CO</span><span class="logos__sep">/</span><span>VERTEX</span><span class="logos__sep">/</span><span>MERIDIAN</span><span class="logos__sep">/</span><span>ATLAS</span><span class="logos__sep">/</span><span>KIN</span><span class="logos__sep">/</span>
+        <span>HALO</span><span class="logos__sep">/</span><span>LOOP</span><span class="logos__sep">/</span><span>NORD</span><span class="logos__sep">/</span><span>CRANE&amp;CO</span><span class="logos__sep">/</span><span>VERTEX</span><span class="logos__sep">/</span><span>MERIDIAN</span><span class="logos__sep">/</span><span>ATLAS</span><span class="logos__sep">/</span><span>KIN</span><span class="logos__sep">/</span>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="quotes">
+  <!-- TESTIMONIAL -->
+  <section class="quote-feature">
     <div class="container">
-      <div class="quotes__head">
-        <p class="section-label reveal"><span class="dot"></span> What clients say</p>
-      </div>
-      <div class="quotes__grid">
-        <figure class="quote reveal">
-          <blockquote>"Within a quarter they'd doubled our revenue on the same budget. They actually understand where the money comes from."</blockquote>
-          <figcaption><strong>Sarah Whitfield</strong><span>Founder, Halo Activewear</span></figcaption>
+      <blockquote class="bigquote reveal">
+        <p>“They doubled our revenue on the same budget in a quarter, and for the first time I actually understood <span class="ser">where the money came from</span>.”</p>
+        <footer><span class="bigquote__name">Sarah Whitfield</span><span class="bigquote__role">Founder — Halo Activewear</span></footer>
+      </blockquote>
+      <div class="quotes__more">
+        <figure class="miniquote reveal">
+          <blockquote>“We went from invisible to ranking first for terms we never thought we'd own.”</blockquote>
+          <figcaption><strong>Daniel Osei</strong> — Loop Finance</figcaption>
         </figure>
-        <figure class="quote reveal">
-          <blockquote>"We went from invisible to ranking first for terms we never thought we'd own. The pipeline hasn't stopped since."</blockquote>
-          <figcaption><strong>Daniel Osei</strong><span>CMO, Loop Finance</span></figcaption>
+        <figure class="miniquote reveal">
+          <blockquote>“They cut the dead weight and our cost per lead halved almost overnight.”</blockquote>
+          <figcaption><strong>Priya Anand</strong> — Crane &amp; Co.</figcaption>
         </figure>
-        <figure class="quote reveal">
-          <blockquote>"Aggressive in the best way. They cut the dead weight and our cost per lead halved almost overnight."</blockquote>
-          <figcaption><strong>Priya Anand</strong><span>Director, Crane &amp; Co.</span></figcaption>
-        </figure>
-        <figure class="quote reveal">
-          <blockquote>"Finally an agency that talks about profit, not impressions. Genuinely the sharpest team we've worked with."</blockquote>
-          <figcaption><strong>Tom Becker</strong><span>CEO, Nord Supply</span></figcaption>
+        <figure class="miniquote reveal">
+          <blockquote>“Finally a team that talks about profit instead of impressions.”</blockquote>
+          <figcaption><strong>Tom Becker</strong> — Nord Supply</figcaption>
         </figure>
       </div>
     </div>
@@ -370,12 +404,14 @@
   <!-- CONTACT / CTA -->
   <section class="cta" id="contact">
     <div class="container">
-      <p class="cta__eyebrow reveal"><span class="dot"></span> Let's go</p>
-      <h2 class="cta__title">
-        <span class="line"><span class="line__in">Let's isolate</span></span>
-        <span class="line"><span class="line__in">your <em>growth<span class="signal-dot">.</span></em></span></span>
-      </h2>
-      <p class="cta__lede reveal">Tell us your goal and your budget. We'll tell you exactly how we'd hit it — for free, no pitch deck nonsense.</p>
+      <div class="cta__top">
+        <p class="cta__eyebrow reveal"><i>05</i> Start a project</p>
+        <h2 class="cta__title">
+          <span class="line"><span class="line__in">Let's isolate</span></span>
+          <span class="line"><span class="line__in">your <span class="ser">growth</span><span class="signal-dot">.</span></span></span>
+        </h2>
+        <p class="cta__lede reveal">Tell us the goal and roughly what you've got to spend. We'll come back with how we'd actually hit it — no charge, no pitch theatre.</p>
+      </div>
 
       <form class="cta__form reveal" id="contactForm" novalidate>
         <div class="field">
@@ -395,24 +431,30 @@
           <label for="budget">Monthly budget</label>
         </div>
         <div class="field field--full">
-          <textarea id="message" name="message" rows="3" required placeholder=" "></textarea>
+          <textarea id="message" name="message" rows="2" required placeholder=" "></textarea>
           <label for="message">What are you trying to grow?</label>
         </div>
-        <button type="submit" class="btn btn--signal btn--lg cta__submit">
-          <span>Send it</span>
+        <button type="submit" class="btn cta__submit">
+          <span>Send it over</span>
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <p class="cta__note" id="formNote" role="status"></p>
       </form>
 
-      <div class="cta__meta reveal">
-        <a href="mailto:hello@isolationmedia.co.uk" class="cta__meta-item">
+      <div class="cta__meta">
+        <a href="mailto:hello@isolationmedia.co.uk" class="cta__meta-item reveal">
           <span class="cta__meta-k">Email</span>
           <span class="cta__meta-v">hello@isolationmedia.co.uk</span>
         </a>
-        <div class="cta__meta-item">
+        <div class="cta__meta-item reveal">
           <span class="cta__meta-k">Studio</span>
           <span class="cta__meta-v">London, United Kingdom</span>
+        </div>
+        <div class="cta__meta-item reveal">
+          <span class="cta__meta-k">Social</span>
+          <span class="cta__meta-v cta__meta-social">
+            <a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">X</a>
+          </span>
         </div>
       </div>
     </div>
@@ -423,31 +465,15 @@
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer__inner">
-    <div class="footer__brand">
-      <span class="brand brand--footer" aria-label="Isolation Media">
-        <span class="brand__mark" aria-hidden="true"><span class="brand__dot"></span><span class="brand__stem"></span></span>
-        <span class="brand__word">isolation<span class="brand__period">.</span></span>
-        <span class="brand__sub">MEDIA</span>
-      </span>
-      <p class="footer__tag">Isolate what works.</p>
-    </div>
-    <nav class="footer__nav" aria-label="Footer">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="footer__social">
-      <span class="footer__social-label">Follow</span>
-      <a href="#" aria-label="Instagram">Instagram</a>
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="X">X / Twitter</a>
-    </div>
+    <a href="#top" class="brand brand--footer" aria-label="Isolation Media">
+      <span class="brand__mark" aria-hidden="true"><span class="brand__dot"></span><span class="brand__stem"></span></span>
+      <span class="brand__word">isolation<span class="brand__period">.</span></span>
+    </a>
+    <p class="footer__tag"><span class="ser">Isolate</span> what works.</p>
   </div>
   <div class="container footer__base">
-    <span>&copy; <span id="year">2026</span> Isolation Media Ltd. London, UK.</span>
-    <span>Paid Ads &amp; SEO</span>
+    <span>&copy; <span id="year">2026</span> Isolation Media — London, UK</span>
+    <span>Paid ads &amp; SEO</span>
   </div>
 </footer>
 
