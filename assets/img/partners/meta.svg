@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
+  <rect x="1" y="1" width="278" height="98" rx="18" fill="#FFFFFF" stroke="#E3E0D6" stroke-width="1.5"/>
+  <g transform="translate(26,30)"><path d="M2 22c0-7 3.5-11 8-11 5.5 0 8.5 9 10 11 1.5-2 4.5-11 10-11 4.5 0 8 4 8 11s-3.5 11-8 11c-5.5 0-8.5-9-10-11-1.5 2-4.5 11-10 11C5.5 33 2 29 2 22Z" fill="none" stroke="#0866FF" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="92" y="44" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#0F0E0C">Meta</text>
+  <text x="92" y="68" font-family="Arial, Helvetica, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#8A8782">BUSINESS PARTNER</text>
+  <text x="258" y="22" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#C9C5B9">PLACEHOLDER</text>
+</svg>
