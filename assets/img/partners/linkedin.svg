@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
-  <rect x="1" y="1" width="278" height="98" rx="18" fill="#FFFFFF" stroke="#E3E0D6" stroke-width="1.5"/>
-  <g transform="translate(26,30)"><rect width="40" height="40" rx="7" fill="#0A66C2"/><text x="20" y="29" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">in</text></g>
-  <text x="92" y="44" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#0F0E0C">LinkedIn</text>
-  <text x="92" y="68" font-family="Arial, Helvetica, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#8A8782">MARKETING PARTNER</text>
-  <text x="258" y="22" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#C9C5B9">PLACEHOLDER</text>
-</svg>

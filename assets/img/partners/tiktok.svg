@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
-  <rect x="1" y="1" width="278" height="98" rx="18" fill="#FFFFFF" stroke="#E3E0D6" stroke-width="1.5"/>
-  <g transform="translate(26,30)"><path d="M27 2c.8 5.2 3.8 8.3 8.6 8.8v6.2c-3.2 0-6.1-1-8.6-2.7v11.6A11 11 0 1 1 16.2 15v6.2a4.9 4.9 0 1 0 4.9 4.9V2H27Z" fill="#111111"/></g>
-  <text x="92" y="44" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#0F0E0C">TikTok</text>
-  <text x="92" y="68" font-family="Arial, Helvetica, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#8A8782">MARKETING PARTNER</text>
-  <text x="258" y="22" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#C9C5B9">PLACEHOLDER</text>
-</svg>

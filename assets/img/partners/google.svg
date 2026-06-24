@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
-  <rect x="1" y="1" width="278" height="98" rx="18" fill="#FFFFFF" stroke="#E3E0D6" stroke-width="1.5"/>
-  <g transform="translate(26,30)"><circle cx="10" cy="10" r="9" fill="#4285F4"/><circle cx="30" cy="10" r="9" fill="#EA4335"/><circle cx="10" cy="30" r="9" fill="#FBBC05"/><circle cx="30" cy="30" r="9" fill="#34A853"/></g>
-  <text x="92" y="44" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#0F0E0C">Google</text>
-  <text x="92" y="68" font-family="Arial, Helvetica, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#8A8782">ADS PARTNER</text>
-  <text x="258" y="22" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="2" fill="#C9C5B9">PLACEHOLDER</text>
-</svg>

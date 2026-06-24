@@ -41,6 +41,6 @@ python3 -m http.server 8000
 - Swap placeholder case studies & testimonials for real ones
 - Drop real client logos into the marquee
 - Wire the contact form to a backend or form service (currently opens the user's
-  mail client to `hello@isolationmedia.co.uk`)
+  mail client to `hello@isolationmedia.com`)
 - Replace social links in the footer
 - Confirm the real domain email address

@@ -163,8 +163,8 @@
         "\nMonthly budget: " + (form.budget.value.trim() || "—") +
         "\n\n" + msg
       );
-      window.location.href = "mailto:hello@isolationmedia.co.uk?subject=" + subject + "&body=" + body;
-      if (note) note.textContent = "Opening your email app… or reach us directly at hello@isolationmedia.co.uk";
+      window.location.href = "mailto:hello@isolationmedia.com?subject=" + subject + "&body=" + body;
+      if (note) note.textContent = "Opening your email app… or reach us directly at hello@isolationmedia.com";
       form.reset();
     });
   }
