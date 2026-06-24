@@ -1,5 +1,5 @@
 /* =========================================================
-   ISOLATION MEDIA — interactions
+   ISOLATION MEDIA - interactions
    ========================================================= */
 (function () {
   "use strict";
@@ -152,15 +152,15 @@
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        if (note) note.textContent = "That email doesn't look right — mind checking it?";
+        if (note) note.textContent = "That email doesn't look right. Mind checking it?";
         return;
       }
-      // No backend yet — open the user's mail client with a prefilled message.
-      var subject = encodeURIComponent("New project enquiry — " + name);
+      // No backend yet: open the user's mail client with a prefilled message.
+      var subject = encodeURIComponent("New project enquiry from " + name);
       var body = encodeURIComponent(
         "Name: " + name + "\nEmail: " + email +
-        "\nCompany: " + (form.company.value.trim() || "—") +
-        "\nMonthly budget: " + (form.budget.value.trim() || "—") +
+        "\nCompany: " + (form.company.value.trim() || "Not given") +
+        "\nMonthly budget: " + (form.budget.value.trim() || "Not given") +
         "\n\n" + msg
       );
       window.location.href = "mailto:hello@isolationmedia.com?subject=" + subject + "&body=" + body;
