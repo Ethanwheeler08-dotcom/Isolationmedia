@@ -1,36 +1,19 @@
 /* =========================================================
-   ISOLATION MEDIA - interactions
+   ISOLATION MEDIA · interactions
    ========================================================= */
 (function () {
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- Loader ---------- */
-  var loader = document.getElementById("loader");
-  var loaderCount = document.getElementById("loaderCount");
-  var loaderFill = document.getElementById("loaderFill");
-  function pad2(n) { return n < 10 ? "0" + n : "" + n; }
-  function runLoader() {
-    if (!loader) return;
-    if (reduceMotion) { finishLoader(); return; }
-    var n = 0;
-    var tick = setInterval(function () {
-      n += Math.floor(Math.random() * 11) + 4;
-      if (n >= 100) { n = 100; clearInterval(tick); setTimeout(finishLoader, 280); }
-      if (loaderCount) loaderCount.textContent = pad2(n);
-      if (loaderFill) loaderFill.style.width = n + "%";
-    }, 85);
-  }
-  function finishLoader() {
-    if (loader) loader.classList.add("done");
+  /* ---------- Hero entrance ---------- */
+  function heroIn() {
     document.body.classList.add("loaded");
     var hero = document.getElementById("hero");
     if (hero) hero.classList.add("in");
   }
-  window.addEventListener("load", runLoader);
-  // safety: never trap the user behind the loader
-  setTimeout(finishLoader, 2600);
+  if (reduceMotion) heroIn();
+  else setTimeout(heroIn, 120);
 
   /* ---------- Year ---------- */
   var year = document.getElementById("year");
@@ -131,14 +114,14 @@
 
   /* ---------- CTA title reveal ---------- */
   var cta = document.getElementById("contact");
-  if (cta && "IntersectionObserver" in window) {
+  if (cta && "IntersectionObserver" in window && !reduceMotion) {
     var ctaIo = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting) { cta.classList.add("in"); ctaIo.unobserve(cta); } });
     }, { threshold: 0.25 });
     ctaIo.observe(cta);
   } else if (cta) { cta.classList.add("in"); }
 
-  /* ---------- Contact form (demo handler) ---------- */
+  /* ---------- Contact form ---------- */
   var form = document.getElementById("contactForm");
   var note = document.getElementById("formNote");
   if (form) {
@@ -148,7 +131,7 @@
       var email = form.email.value.trim();
       var msg = form.message.value.trim();
       if (!name || !email || !msg) {
-        if (note) note.textContent = "Fill in your name, email and message and we'll be in touch.";
+        if (note) note.textContent = "Fill in your name, email and the treatments you want to grow, and we'll be in touch.";
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -156,12 +139,12 @@
         return;
       }
       // No backend yet: open the user's mail client with a prefilled message.
-      var subject = encodeURIComponent("New project enquiry from " + name);
+      var subject = encodeURIComponent("Free ads audit request from " + name);
       var body = encodeURIComponent(
         "Name: " + name + "\nEmail: " + email +
-        "\nCompany: " + (form.company.value.trim() || "Not given") +
-        "\nMonthly budget: " + (form.budget.value.trim() || "Not given") +
-        "\n\n" + msg
+        "\nPractice: " + (form.practice.value.trim() || "Not given") +
+        "\nPhone: " + (form.phone.value.trim() || "Not given") +
+        "\n\nTreatments to grow:\n" + msg
       );
       window.location.href = "mailto:hello@isolationmedia.com?subject=" + subject + "&body=" + body;
       if (note) note.textContent = "Opening your email app… or reach us directly at hello@isolationmedia.com";
