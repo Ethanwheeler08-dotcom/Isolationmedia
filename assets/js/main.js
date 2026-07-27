@@ -131,7 +131,7 @@
       var email = form.email.value.trim();
       var msg = form.message.value.trim();
       if (!name || !email || !msg) {
-        if (note) note.textContent = "Fill in your name, email and the treatments you want to grow, and we'll be in touch.";
+        if (note) note.textContent = "Fill in your name, email and the practice areas you want to grow, and we'll be in touch.";
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -142,9 +142,9 @@
       var subject = encodeURIComponent("Free ads audit request from " + name);
       var body = encodeURIComponent(
         "Name: " + name + "\nEmail: " + email +
-        "\nPractice: " + (form.practice.value.trim() || "Not given") +
+        "\nFirm: " + (form.firm.value.trim() || "Not given") +
         "\nPhone: " + (form.phone.value.trim() || "Not given") +
-        "\n\nTreatments to grow:\n" + msg
+        "\n\nPractice areas to grow:\n" + msg
       );
       window.location.href = "mailto:hello@isolationmedia.com?subject=" + subject + "&body=" + body;
       if (note) note.textContent = "Opening your email app… or reach us directly at hello@isolationmedia.com";

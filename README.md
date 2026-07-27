@@ -1,15 +1,15 @@
 # Isolation Media
 
-Marketing site for **Isolation Media**, a paid ads agency that works exclusively
-with dental practices and clinics.
+Marketing site for **Isolation Media**, a paid media agency that works
+exclusively with law firms.
 
-> *Full diaries. Nothing else.*
+> *Full caseloads. Nothing else.*
 
 ## Stack
 
 Hand built static site with no framework and no build step. Just open `index.html`.
 
-- `index.html` single page site (hero, stats, why dental only, services, results, process, testimonials, FAQ, contact, footer)
+- `index.html` single page site (hero, stats, why legal only, services, results, process, testimonials, FAQ, contact, footer)
 - `assets/css/style.css` all styling
 - `assets/js/main.js` scroll reveals, animated counters, sticky nav, mobile menu, contact form
 - `assets/fonts/` Montreal Medium (display) and Franklin Gothic Book (body)
