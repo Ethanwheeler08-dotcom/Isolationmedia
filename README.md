@@ -1,7 +1,7 @@
 # Isolation Media
 
-Marketing site for **Isolation Media**, a paid media agency that works
-exclusively with law firms.
+Marketing site for **Isolation Media**, an SEO agency that works exclusively
+with law firms.
 
 > *Full caseloads. Nothing else.*
 

@@ -139,7 +139,7 @@
         return;
       }
       // No backend yet: open the user's mail client with a prefilled message.
-      var subject = encodeURIComponent("Free ads audit request from " + name);
+      var subject = encodeURIComponent("Free SEO audit request from " + name);
       var body = encodeURIComponent(
         "Name: " + name + "\nEmail: " + email +
         "\nFirm: " + (form.firm.value.trim() || "Not given") +
