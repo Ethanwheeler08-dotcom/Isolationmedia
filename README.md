@@ -41,5 +41,5 @@ python3 -m http.server 8000
 - Replace the stats, case results and testimonials with real client numbers and
   quotes before going live
 - Wire the contact form to a backend or form service (currently opens the
-  visitor's mail client to `hello@isolationmedia.com`)
+  visitor's mail client to `admin@isolationmedia.com`)
 - Confirm the real domain email address

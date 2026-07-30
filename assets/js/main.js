@@ -146,8 +146,8 @@
         "\nPhone: " + (form.phone.value.trim() || "Not given") +
         "\n\nPractice areas to grow:\n" + msg
       );
-      window.location.href = "mailto:hello@isolationmedia.com?subject=" + subject + "&body=" + body;
-      if (note) note.textContent = "Opening your email app… or reach us directly at hello@isolationmedia.com";
+      window.location.href = "mailto:admin@isolationmedia.com?subject=" + subject + "&body=" + body;
+      if (note) note.textContent = "Opening your email app… or reach us directly at admin@isolationmedia.com";
       form.reset();
     });
   }
