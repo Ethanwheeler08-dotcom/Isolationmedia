@@ -131,7 +131,7 @@
       var email = form.email.value.trim();
       var msg = form.message.value.trim();
       if (!name || !email || !msg) {
-        if (note) note.textContent = "Fill in your name, email and the practice areas you want to grow, and we'll be in touch.";
+        if (note) note.textContent = "Fill in your name, email and what you want to be the answer for, and we'll be in touch.";
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -139,12 +139,12 @@
         return;
       }
       // No backend yet: open the user's mail client with a prefilled message.
-      var subject = encodeURIComponent("Free SEO audit request from " + name);
+      var subject = encodeURIComponent("Free GEO audit request from " + name);
       var body = encodeURIComponent(
         "Name: " + name + "\nEmail: " + email +
-        "\nFirm: " + (form.firm.value.trim() || "Not given") +
+        "\nCompany: " + (form.company.value.trim() || "Not given") +
         "\nPhone: " + (form.phone.value.trim() || "Not given") +
-        "\n\nPractice areas to grow:\n" + msg
+        "\n\nWhat they want to be the answer for:\n" + msg
       );
       window.location.href = "mailto:admin@isolationmedia.com?subject=" + subject + "&body=" + body;
       if (note) note.textContent = "Opening your email app… or reach us directly at admin@isolationmedia.com";
