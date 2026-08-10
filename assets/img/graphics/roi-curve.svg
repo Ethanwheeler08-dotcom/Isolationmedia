@@ -43,7 +43,7 @@
 
   <!-- return callout -->
   <g>
-    <rect x="612" y="60" width="228" height="44" rx="22" fill="#12312A" stroke="#2BE4AC" stroke-width="1.5"/>
-    <text x="726" y="89" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" letter-spacing="0.6" fill="#2BE4AC">RETURN COMPOUNDING</text>
+    <rect x="360" y="150" width="252" height="46" rx="23" fill="#12312A" stroke="#2BE4AC" stroke-width="1.5"/>
+    <text x="486" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" letter-spacing="0.6" fill="#2BE4AC">RETURN COMPOUNDING</text>
   </g>
 </svg>
