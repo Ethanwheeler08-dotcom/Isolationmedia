@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A network of citation sources converging on a single recommended company">
+  <rect width="800" height="600" fill="#0B1E1A"/>
+  <g stroke="#1E332D" stroke-width="1">
+    <path d="M120 90 L400 300M250 60 L400 300M90 260 L400 300M140 430 L400 300M280 540 L400 300M470 70 L400 300M660 140 L400 300M710 300 L400 300M650 470 L400 300M480 550 L400 300"/>
+  </g>
+  <g stroke="#0E9F78" stroke-width="1.6">
+    <path d="M250 60 L400 300M90 260 L400 300M660 140 L400 300M650 470 L400 300"/>
+  </g>
+  <g fill="#16302A" stroke="#22463C" stroke-width="1">
+    <circle cx="120" cy="90" r="16"/><circle cx="140" cy="430" r="13"/>
+    <circle cx="280" cy="540" r="15"/><circle cx="470" cy="70" r="12"/>
+    <circle cx="710" cy="300" r="14"/><circle cx="480" cy="550" r="13"/>
+  </g>
+  <g fill="#0E9F78" opacity="0.9">
+    <circle cx="250" cy="60" r="17"/><circle cx="90" cy="260" r="15"/>
+    <circle cx="660" cy="140" r="18"/><circle cx="650" cy="470" r="16"/>
+  </g>
+  <circle cx="400" cy="300" r="78" fill="#0B1E1A" stroke="#2BE4AC" stroke-width="2"/>
+  <circle cx="400" cy="300" r="96" fill="none" stroke="#2BE4AC" stroke-width="1" opacity="0.35"/>
+  <circle cx="400" cy="300" r="118" fill="none" stroke="#2BE4AC" stroke-width="1" opacity="0.15"/>
+  <rect x="374" y="274" width="18" height="18" fill="#2BE4AC"/>
+  <rect x="374" y="300" width="18" height="26" fill="#F7FAF8"/>
+</svg>

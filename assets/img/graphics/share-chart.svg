@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Bar chart showing share of AI answers climbing over twelve months">
+  <rect width="800" height="600" fill="#EDF3F0"/>
+  <g stroke="#DCE6E1" stroke-width="1">
+    <path d="M80 120 H740M80 220 H740M80 320 H740M80 420 H740M80 500 H740"/>
+  </g>
+  <g fill="#CFDCD6">
+    <rect x="100" y="452" width="52" height="48" rx="3"/>
+    <rect x="180" y="436" width="52" height="64" rx="3"/>
+    <rect x="260" y="404" width="52" height="96" rx="3"/>
+    <rect x="340" y="360" width="52" height="140" rx="3"/>
+  </g>
+  <g fill="#0E9F78">
+    <rect x="420" y="300" width="52" height="200" rx="3"/>
+    <rect x="500" y="240" width="52" height="260" rx="3"/>
+    <rect x="580" y="176" width="52" height="324" rx="3"/>
+    <rect x="660" y="128" width="52" height="372" rx="3"/>
+  </g>
+  <path d="M126 452 L206 436 L286 404 L366 360 L446 300 L526 240 L606 176 L686 128" fill="none" stroke="#0B1E1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="686" cy="128" r="9" fill="#0B1E1A"/>
+  <circle cx="686" cy="128" r="16" fill="none" stroke="#0B1E1A" stroke-width="1.5" opacity="0.3"/>
+  <path d="M80 500 H740" stroke="#0B1E1A" stroke-width="2"/>
+</svg>

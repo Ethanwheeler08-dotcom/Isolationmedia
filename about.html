@@ -21,7 +21,7 @@
 
   <link rel="preload" href="assets/fonts/Montreal-Medium.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="assets/fonts/FranklinGothic-Book.otf" as="font" type="font/otf" crossorigin />
-  <link rel="stylesheet" href="assets/css/style.css?v=13" />
+  <link rel="stylesheet" href="assets/css/style.css?v=14" />
 </head>
 <body>
 
@@ -70,7 +70,7 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <p class="eyebrow reveal"><i>✦</i> About</p>
+      <p class="eyebrow reveal">About</p>
       <h1 class="page-hero__title">
         <span class="line"><span class="line__in">The studio that saw</span></span>
         <span class="line"><span class="line__in">search <span class="ser">change</span><span class="signal-dot">.</span></span></span>
@@ -79,15 +79,26 @@
     </div>
   </section>
 
+  <!-- STUDIO IMAGE -->
+  <section style="padding-bottom: clamp(56px, 8vw, 100px)">
+    <div class="container">
+      <!-- Swap this src for a real photo of the team or studio -->
+      <div class="media media--wide reveal" style="aspect-ratio: 21 / 9">
+        <img src="assets/img/graphics/photo-placeholder.svg" alt="" />
+        <span class="media__cap">The studio</span>
+      </div>
+    </div>
+  </section>
+
   <!-- STORY -->
-  <section class="story">
+  <section class="story" style="padding-top: 0">
     <div class="container story__grid">
       <h2 class="story__title reveal">Why we bet everything on <span class="ser">the answer</span>.</h2>
       <div class="story__body">
         <p class="lead reveal">We named ourselves after the one thing most agencies never do: isolate the variable that actually moves the numbers, and put everything behind it.</p>
         <p class="reveal">We came up through performance marketing, running search and content for companies on three continents. Then we watched the ground move. Buyers stopped scrolling results and started asking assistants, and the assistants answered with one name, maybe two. Every client we audited had the same blind spot: nobody knew what the engines said about them, and nobody owned the problem.</p>
-        <p class="reveal">So we went all in. We dropped everything that wasn't about winning answers, built our own tracking to see what the engines actually say, and turned the discipline the industry now calls GEO into the only service we sell. That head start is what our clients rent.</p>
-        <p class="reveal">The model hasn't changed since day one. A small number of clients, one per market, worked on by senior people who show you exactly what we see. When the answer is you, everyone can tell. That is the point.</p>
+        <p class="reveal">So we went all in. We dropped everything that was not about winning answers, built our own tracking to see what the engines actually say, and turned the discipline the industry now calls GEO into the only service we sell. That head start is what our clients rent.</p>
+        <p class="reveal">The model has not changed since day one. A small number of clients, one per market, worked on by senior people who show you exactly what we see. When the answer is you, everyone can tell. That is the point.</p>
       </div>
     </div>
   </section>
@@ -104,18 +115,63 @@
     </div>
   </section>
 
-  <!-- VALUES -->
-  <section class="values quotes--pad-top">
+  <!-- TEAM -->
+  <section class="team">
     <div class="container">
-      <div class="values__head">
-        <p class="eyebrow reveal"><i>✦</i> What we believe</p>
-        <h2 class="values__title reveal">Three rules we don't <span class="ser">break</span>.</h2>
+      <div class="shead">
+        <div class="shead__main">
+          <p class="eyebrow reveal">The team</p>
+          <h2 class="shead__title reveal">The people who <span class="ser">do the work</span>.</h2>
+        </div>
+        <p class="shead__side reveal">You will meet all of us on the audit call, and you will keep working with the same people after you sign. That is the whole model.</p>
+      </div>
+
+      <div class="team__grid">
+        <article class="tmember reveal">
+          <!-- Swap this src for a real headshot, and the name and bio below -->
+          <div class="media media--tall">
+            <img src="assets/img/graphics/photo-placeholder.svg" alt="" />
+          </div>
+          <h3 class="tmember__name">Your name here</h3>
+          <p class="tmember__role">Founder</p>
+          <p class="tmember__bio">Runs answer strategy and sits on every audit call. Came up through performance marketing before going all in on generative engines.</p>
+        </article>
+        <article class="tmember reveal">
+          <!-- Swap this src for a real headshot, and the name and bio below -->
+          <div class="media media--tall">
+            <img src="assets/img/graphics/photo-placeholder.svg" alt="" />
+          </div>
+          <h3 class="tmember__name">Team member</h3>
+          <p class="tmember__role">Content and evidence</p>
+          <p class="tmember__bio">Builds the question led pages and original research that engines quote, and rewrites the ones quietly costing you answers.</p>
+        </article>
+        <article class="tmember reveal">
+          <!-- Swap this src for a real headshot, and the name and bio below -->
+          <div class="media media--tall">
+            <img src="assets/img/graphics/photo-placeholder.svg" alt="" />
+          </div>
+          <h3 class="tmember__name">Team member</h3>
+          <p class="tmember__role">Citations and reputation</p>
+          <p class="tmember__bio">Earns the placements, reviews and community presence that turn your name into something an engine can repeat safely.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values" style="border-top: 1px solid var(--line); padding-top: clamp(80px, 12vw, 140px)">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__main">
+          <p class="eyebrow reveal">What we believe</p>
+          <h2 class="shead__title reveal">Three rules we don't <span class="ser">break</span>.</h2>
+        </div>
       </div>
       <div class="values__grid">
         <article class="value reveal">
           <span class="value__no">01</span>
           <h3 class="value__name">Be the answer, not an option.</h3>
-          <p class="value__text">Ten blue links had room for everyone. An answer has room for one name. We only take work where we believe that name can be yours, and we tell you honestly when we don't.</p>
+          <p class="value__text">Ten blue links had room for everyone. An answer has room for one name. We only take work where we believe that name can be yours, and we tell you honestly when we do not.</p>
         </article>
         <article class="value reveal">
           <span class="value__no">02</span>
@@ -125,7 +181,7 @@
         <article class="value reveal">
           <span class="value__no">03</span>
           <h3 class="value__name">Plain English, real numbers.</h3>
-          <p class="value__text">You will always know your share of answer, what it produced and what we are doing next, in a report you can read in five minutes. If something didn't work, it says so.</p>
+          <p class="value__text">You will always know your share of answer, what it produced and what we are doing next, in a report you can read in five minutes. If something did not work, it says so.</p>
         </article>
       </div>
     </div>
@@ -168,6 +224,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=13"></script>
+<script src="assets/js/main.js?v=14"></script>
 </body>
 </html>
