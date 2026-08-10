@@ -21,9 +21,11 @@
 
   <link rel="preload" href="assets/fonts/Montreal-Medium.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="assets/fonts/FranklinGothic-Book.otf" as="font" type="font/otf" crossorigin />
-  <link rel="stylesheet" href="assets/css/style.css?v=14" />
+  <link rel="stylesheet" href="assets/css/style.css?v=15" />
 </head>
 <body>
+
+<span class="progress" id="progress" aria-hidden="true"></span>
 
 <!-- Header -->
 <header class="nav" id="nav">
@@ -75,7 +77,7 @@
         <span class="line"><span class="line__in">Proof that the</span></span>
         <span class="line"><span class="line__in"><span class="ser">answer</span> pays<span class="signal-dot">.</span></span></span>
       </h1>
-      <p class="page-hero__lede reveal">We measure one thing: whether being the recommendation produces enquiries and revenue. Here is what that has looked like across three very different companies, on three continents.</p>
+      <p class="page-hero__lede reveal">We measure one thing: whether being the recommendation produces revenue. Every case below leads with what a dollar came back as, because that is the only number that decides whether this was worth doing.</p>
     </div>
   </section>
 
@@ -84,8 +86,8 @@
     <div class="container">
       <div class="bigstats__grid">
         <div class="bigstat reveal">
-          <span class="bigstat__num stat__num" data-count="3.1" data-decimals="1" data-suffix="x">0</span>
-          <span class="bigstat__label">Average growth in AI referred enquiries in year one</span>
+          <span class="bigstat__num stat__num" data-count="12.31" data-decimals="2" data-prefix="$">$0.00</span>
+          <span class="bigstat__label">Average return for every dollar invested with us</span>
         </div>
         <div class="bigstat reveal">
           <span class="bigstat__num stat__num" data-count="68" data-suffix="%">0</span>
@@ -118,7 +120,7 @@
         <div class="fcase__media reveal">
           <!-- Swap this src for a real client photo, screenshot or logo lockup -->
           <div class="media media--wide media--flush">
-            <img src="assets/img/graphics/answer-network.svg" alt="Citation sources converging on a single recommended company" />
+            <img src="assets/img/graphics/roi-curve.svg" alt="Return compounding well above the flat investment line over twelve months" />
           </div>
         </div>
         <div class="reveal">
@@ -126,13 +128,22 @@
             <span class="fcase__idx">Case 01</span>
             <span class="fcase__chip">B2B software · Austin</span>
           </div>
+
+          <div class="roi">
+            <span class="roi__k">Return on investment</span>
+            <span class="roi__v"><span class="stat__num" data-count="16.40" data-decimals="2" data-prefix="$">$0.00</span><span class="roi__unit"> / $1</span></span>
+            <span class="roi__sub">Every dollar invested returned $16.40 in closed revenue across twelve months.</span>
+            <span class="roi__bar"><span class="roi__fill" data-fill="94"></span></span>
+            <span class="roi__scale"><span>Break even</span><span>16.4x</span></span>
+          </div>
+
           <p class="fcase__metric">8 <em>of</em> 10</p>
           <p class="fcase__metric-sub">ChatGPT answers now name them</p>
           <p class="fcase__body">Invisible in AI answers while smaller rivals got named on repeat. We rebuilt their entity signals from the ground up, published original benchmark data the engines now cite as the reference for their category, and earned mentions across the comparison sources models lean on. Demo bookings from AI referrals now outperform every paid channel they run.</p>
           <div class="fcase__stats">
             <div class="fcase__stat"><b>9 months</b><span>To category leadership</span></div>
             <div class="fcase__stat"><b>+310%</b><span>AI referred demos</span></div>
-            <div class="fcase__stat"><b>0</b><span>Cost per click</span></div>
+            <div class="fcase__stat"><b>$0</b><span>Cost per click</span></div>
           </div>
         </div>
       </article>
@@ -149,6 +160,15 @@
             <span class="fcase__idx">Case 02</span>
             <span class="fcase__chip">Legal · London</span>
           </div>
+
+          <div class="roi">
+            <span class="roi__k">Return on investment</span>
+            <span class="roi__v"><span class="stat__num" data-count="12.31" data-decimals="2" data-prefix="$">$0.00</span><span class="roi__unit"> / $1</span></span>
+            <span class="roi__sub">Every dollar invested returned $12.31 in fee income from matters traced to AI referrals.</span>
+            <span class="roi__bar"><span class="roi__fill" data-fill="76"></span></span>
+            <span class="roi__scale"><span>Break even</span><span>12.3x</span></span>
+          </div>
+
           <p class="fcase__metric">4<em>x</em></p>
           <p class="fcase__metric-sub">More new client enquiries from AI</p>
           <p class="fcase__body">Enquiries had flattened as people stopped searching and started asking assistants who to hire. We mapped the questions clients ask before choosing a firm, rebuilt every practice area page to answer them directly, and earned citations in the legal directories and publications engines trust most. A year on, AI referred enquiries in their core practice areas are up fourfold and still climbing.</p>
@@ -172,6 +192,15 @@
             <span class="fcase__idx">Case 03</span>
             <span class="fcase__chip">Self storage · Perth</span>
           </div>
+
+          <div class="roi">
+            <span class="roi__k">Return on investment</span>
+            <span class="roi__v"><span class="stat__num" data-count="9.80" data-decimals="2" data-prefix="$">$0.00</span><span class="roi__unit"> / $1</span></span>
+            <span class="roi__sub">Every dollar invested returned $9.80 in booked storage contracts, and the answer keeps paying.</span>
+            <span class="roi__bar"><span class="roi__fill" data-fill="60"></span></span>
+            <span class="roi__scale"><span>Break even</span><span>9.8x</span></span>
+          </div>
+
           <p class="fcase__metric">The <em>default</em></p>
           <p class="fcase__metric-sub">Answer for storage in its city</p>
           <p class="fcase__body">They wanted to be the name assistants give when locals ask where to store a household or a business's stock. Reviews, ruthlessly consistent local listings and question led pages made them exactly that, and they have held the answer across the metro area for over a year. Customers now mention the recommendation when they book, unprompted.</p>
@@ -257,6 +286,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=14"></script>
+<script src="assets/js/main.js?v=15"></script>
 </body>
 </html>

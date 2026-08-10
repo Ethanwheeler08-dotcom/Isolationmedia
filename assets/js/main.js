@@ -152,6 +152,59 @@
     });
   }
 
+  /* ---------- Scroll progress bar ---------- */
+  var progress = document.getElementById("progress");
+  if (progress) {
+    var ticking = false;
+    function drawProgress() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var p = max > 0 ? window.scrollY / max : 0;
+      progress.style.transform = "scaleX(" + Math.min(Math.max(p, 0), 1) + ")";
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(drawProgress); }
+    }, { passive: true });
+    drawProgress();
+  }
+
+  /* ---------- Engine switcher (hero answer panel) ---------- */
+  var eswitch = document.getElementById("eswitch");
+  if (eswitch) {
+    var tabs = eswitch.querySelectorAll("button");
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var target = tab.getAttribute("data-engine");
+        tabs.forEach(function (t) {
+          t.setAttribute("aria-selected", String(t === tab));
+        });
+        document.querySelectorAll(".answer__panel").forEach(function (panel) {
+          panel.hidden = panel.getAttribute("data-engine") !== target;
+        });
+      });
+    });
+  }
+
+  /* ---------- ROI bars fill on scroll ---------- */
+  var roiFills = document.querySelectorAll(".roi__fill");
+  function fillRoi(el) {
+    var pct = el.getAttribute("data-fill") || "0";
+    if (reduceMotion) { el.style.transition = "none"; }
+    el.style.width = pct + "%";
+  }
+  if (roiFills.length) {
+    if ("IntersectionObserver" in window) {
+      var rio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { fillRoi(e.target); rio.unobserve(e.target); }
+        });
+      }, { threshold: 0.4 });
+      roiFills.forEach(function (el) { rio.observe(el); });
+    } else {
+      roiFills.forEach(fillRoi);
+    }
+  }
+
   /* ---------- Smooth anchor offset for fixed nav ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener("click", function (e) {

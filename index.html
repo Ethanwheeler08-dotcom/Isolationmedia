@@ -21,9 +21,11 @@
 
   <link rel="preload" href="assets/fonts/Montreal-Medium.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="assets/fonts/FranklinGothic-Book.otf" as="font" type="font/otf" crossorigin />
-  <link rel="stylesheet" href="assets/css/style.css?v=14" />
+  <link rel="stylesheet" href="assets/css/style.css?v=15" />
 </head>
 <body>
+
+<span class="progress" id="progress" aria-hidden="true"></span>
 
 <!-- Header -->
 <header class="nav" id="nav">
@@ -91,24 +93,64 @@
       </div>
 
       <!-- Mock answer panel: the product, shown rather than described -->
-      <div class="answer reveal" aria-label="Example of an AI assistant answer naming a client">
-        <div class="answer__bar">
-          <span class="answer__dot"></span>
-          <span class="answer__app">AI assistant</span>
+      <div class="reveal">
+        <div class="eswitch" id="eswitch" role="tablist" aria-label="Switch answer engine">
+          <button type="button" role="tab" data-engine="chatgpt" aria-selected="true">ChatGPT</button>
+          <button type="button" role="tab" data-engine="perplexity" aria-selected="false">Perplexity</button>
+          <button type="button" role="tab" data-engine="gemini" aria-selected="false">Gemini</button>
         </div>
-        <p class="answer__ask">Who's the best self storage company in Perth?</p>
-        <div class="answer__reply">
-          <p>Based on customer reviews, pricing transparency and coverage across the metro area, most people point to <span class="answer__pick">your company</span> first. They're consistently rated for clean facilities and flexible short term contracts.</p>
-          <div class="answer__skeleton" aria-hidden="true">
-            <span style="width: 92%"></span>
-            <span style="width: 74%"></span>
+
+        <div class="answer" aria-label="Example of an AI assistant answer naming a client">
+          <div class="answer__bar">
+            <span class="answer__dot"></span>
+            <span class="answer__app">Live example</span>
           </div>
-        </div>
-        <div class="answer__srcs">
-          <span class="answer__src answer__src--lit">Reviews</span>
-          <span class="answer__src answer__src--lit">Industry press</span>
-          <span class="answer__src">Directories</span>
-          <span class="answer__src">Forums</span>
+
+          <div class="answer__panel" data-engine="chatgpt">
+            <p class="answer__ask">Who's the best self storage company in Perth?</p>
+            <div class="answer__reply">
+              <p>Based on customer reviews, pricing transparency and coverage across the metro area, most people point to <span class="answer__pick">your company</span> first. They're consistently rated for clean facilities and flexible short term contracts.</p>
+              <div class="answer__skeleton" aria-hidden="true">
+                <span style="width: 92%"></span><span style="width: 74%"></span>
+              </div>
+            </div>
+            <div class="answer__srcs">
+              <span class="answer__src answer__src--lit">Reviews</span>
+              <span class="answer__src answer__src--lit">Local press</span>
+              <span class="answer__src">Directories</span>
+              <span class="answer__src">Forums</span>
+            </div>
+          </div>
+
+          <div class="answer__panel" data-engine="perplexity" hidden>
+            <p class="answer__ask">Which firm should I use for an employment claim in London?</p>
+            <div class="answer__reply">
+              <p>For employment matters in London, <span class="answer__pick">your firm</span> comes up most often in recent client reviews and legal directory listings, particularly for tribunal and settlement work.</p>
+              <div class="answer__skeleton" aria-hidden="true">
+                <span style="width: 88%"></span><span style="width: 66%"></span>
+              </div>
+            </div>
+            <div class="answer__srcs">
+              <span class="answer__src answer__src--lit">Legal directories</span>
+              <span class="answer__src answer__src--lit">Reviews</span>
+              <span class="answer__src">Trade press</span>
+            </div>
+          </div>
+
+          <div class="answer__panel" data-engine="gemini" hidden>
+            <p class="answer__ask">Best project tracking software for a mid sized team?</p>
+            <div class="answer__reply">
+              <p>Three tools dominate this category, and <span class="answer__pick">your product</span> is the one most often recommended for teams of this size, based on published benchmarks and independent comparisons.</p>
+              <div class="answer__skeleton" aria-hidden="true">
+                <span style="width: 94%"></span><span style="width: 71%"></span>
+              </div>
+            </div>
+            <div class="answer__srcs">
+              <span class="answer__src answer__src--lit">Benchmark data</span>
+              <span class="answer__src answer__src--lit">Comparison sites</span>
+              <span class="answer__src">Communities</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -148,33 +190,29 @@
     </div>
   </section>
 
-  <!-- BIG STATS -->
-  <section class="bigstats">
+  <!-- ROI BAND -->
+  <section class="roiband">
     <div class="container">
       <div class="shead light">
         <div class="shead__main">
-          <p class="eyebrow light reveal">By the numbers</p>
-          <h2 class="shead__title reveal">What being the answer <span class="ser">is worth</span>.</h2>
+          <p class="eyebrow light reveal">The return</p>
+          <h2 class="shead__title reveal">What a dollar spent with us <span class="ser">comes back as</span>.</h2>
         </div>
-        <p class="shead__side reveal">Averages across the accounts we run. We report the same figures to clients every month, including the ones that go the wrong way.</p>
+        <p class="shead__side reveal">Averaged across every account we run, measured on closed revenue rather than leads. We report the same figure to clients every month, including the months it falls.</p>
       </div>
-      <div class="bigstats__grid">
-        <div class="bigstat reveal">
-          <span class="bigstat__num stat__num" data-count="3.1" data-decimals="1" data-suffix="x">0</span>
-          <span class="bigstat__label">Average growth in AI referred enquiries in year one</span>
+
+      <div class="roiband__grid">
+        <div class="reveal">
+          <p class="roiband__lead"><span class="stat__num" data-count="12.31" data-decimals="2" data-prefix="$">$0.00</span></p>
+          <p class="roiband__cap">returned for every $1 invested</p>
+          <p class="roiband__note">Answers you win keep producing customers after the work that won them is paid for. That is why the multiple climbs the longer a client stays, instead of resetting every month like paid media does.</p>
         </div>
-        <div class="bigstat reveal">
-          <span class="bigstat__num stat__num" data-count="68" data-suffix="%">0</span>
-          <span class="bigstat__label">Average share of AI answers won in our clients' categories</span>
-        </div>
-        <div class="bigstat reveal">
-          <span class="bigstat__num stat__num" data-count="40" data-suffix="+">0</span>
-          <span class="bigstat__label">Companies made the default recommendation in their market</span>
-        </div>
-        <div class="bigstat reveal">
-          <span class="bigstat__num stat__num" data-count="9" data-suffix="/10">0</span>
-          <span class="bigstat__label">Clients that stay with us past the first year</span>
-        </div>
+        <ul class="roiband__list reveal">
+          <li><b><span class="stat__num" data-count="14" data-suffix="%">0</span></b><span>Average share of category answers before we start</span></li>
+          <li><b><span class="stat__num" data-count="68" data-suffix="%">0</span></b><span>Average share of category answers after year one</span></li>
+          <li><b><span class="stat__num" data-count="3.1" data-decimals="1" data-suffix="x">0</span></b><span>Growth in enquiries referred by AI assistants</span></li>
+          <li><b><span class="stat__num" data-count="0" data-prefix="$">0</span></b><span>Cost per click, forever, on answers you own</span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -248,7 +286,7 @@
         <div class="fcase__media reveal">
           <!-- Swap this src for a real client photo or screenshot -->
           <div class="media media--wide media--flush">
-            <img src="assets/img/graphics/answer-network.svg" alt="Citation sources converging on a single recommended company" />
+            <img src="assets/img/graphics/roi-curve.svg" alt="Return compounding well above the flat investment line over twelve months" />
           </div>
         </div>
         <div class="reveal">
@@ -256,13 +294,22 @@
             <span class="fcase__idx">Case 01</span>
             <span class="fcase__chip">B2B software · Austin</span>
           </div>
+
+          <div class="roi">
+            <span class="roi__k">Return on investment</span>
+            <span class="roi__v"><span class="stat__num" data-count="16.40" data-decimals="2" data-prefix="$">$0.00</span><span class="roi__unit"> / $1</span></span>
+            <span class="roi__sub">Every dollar invested returned $16.40 in closed revenue across twelve months.</span>
+            <span class="roi__bar"><span class="roi__fill" data-fill="94"></span></span>
+            <span class="roi__scale"><span>Break even</span><span>16.4x</span></span>
+          </div>
+
           <p class="fcase__metric">8 <em>of</em> 10</p>
           <p class="fcase__metric-sub">ChatGPT answers now name them</p>
-          <p class="fcase__body">Invisible in AI answers while smaller rivals got named. We rebuilt their entity signals, published original benchmark data the engines now cite, and earned mentions in the comparison sources models trust. Demo bookings from AI referrals now outperform every paid channel they run.</p>
+          <p class="fcase__body">Invisible in AI answers while smaller rivals got named. We rebuilt their entity signals, published original benchmark data the engines now cite, and earned mentions in the comparison sources models trust. Demo bookings from AI referrals now outperform every paid channel they run, at no cost per click.</p>
           <div class="fcase__stats">
             <div class="fcase__stat"><b>9 months</b><span>To category leadership</span></div>
             <div class="fcase__stat"><b>+310%</b><span>AI referred demos</span></div>
-            <div class="fcase__stat"><b>0</b><span>Cost per click</span></div>
+            <div class="fcase__stat"><b>$0</b><span>Cost per click</span></div>
           </div>
         </div>
       </article>
@@ -300,6 +347,37 @@
             <span class="qcard__role">Self storage company, Perth</span>
           </figcaption>
         </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__main">
+          <p class="eyebrow reveal">Why owners back us</p>
+          <h2 class="shead__title reveal">Low risk to start. <span class="ser">Hard</span> to walk away from.</h2>
+        </div>
+        <p class="shead__side reveal">We take the guesswork out of the first decision, then let the numbers do the arguing from month two onward.</p>
+      </div>
+      <div class="guarantee__grid">
+        <div class="gitem reveal">
+          <span class="gitem__k"><span class="u">$</span>0</span>
+          <span class="gitem__v">To find out where you stand. The audit is free and you keep the findings whether you hire us or not.</span>
+        </div>
+        <div class="gitem reveal">
+          <span class="gitem__k">90 days</span>
+          <span class="gitem__v">To see your share of answer move, tracked from day one so you watch it happen rather than take our word.</span>
+        </div>
+        <div class="gitem reveal">
+          <span class="gitem__k">1 <span class="u">of</span> 1</span>
+          <span class="gitem__v">Companies per market. Your competitors cannot hire us while you are with us.</span>
+        </div>
+        <div class="gitem reveal">
+          <span class="gitem__k">No lock in</span>
+          <span class="gitem__v">Month to month after the first ninety days. We would rather earn the renewal than enforce a contract.</span>
+        </div>
       </div>
     </div>
   </section>
@@ -367,6 +445,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=14"></script>
+<script src="assets/js/main.js?v=15"></script>
 </body>
 </html>

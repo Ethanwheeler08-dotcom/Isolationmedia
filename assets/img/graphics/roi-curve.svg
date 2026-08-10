@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="Return compounding well above a flat investment line over twelve months">
+  <defs>
+    <linearGradient id="rfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E9F78" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#0E9F78" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" fill="#0B1E1A"/>
+
+  <!-- grid -->
+  <g stroke="#18302A" stroke-width="1">
+    <path d="M90 110H840M90 200H840M90 290H840M90 380H840M90 470H840"/>
+  </g>
+  <g stroke="#142720" stroke-width="1">
+    <path d="M215 90V520M340 90V520M465 90V520M590 90V520M715 90V520"/>
+  </g>
+
+  <!-- flat investment line -->
+  <path d="M90 470H840" stroke="#3B564D" stroke-width="2" stroke-dasharray="6 7"/>
+  <text x="98" y="459" font-family="Arial, sans-serif" font-size="15" letter-spacing="2.4" fill="#7E958B">INVESTED</text>
+
+  <!-- return area + curve -->
+  <path d="M90 468 C 215 462, 300 440, 380 396 C 470 346, 540 276, 620 214 C 690 162, 760 132, 840 118 L840 520 L90 520 Z" fill="url(#rfill)"/>
+  <path d="M90 468 C 215 462, 300 440, 380 396 C 470 346, 540 276, 620 214 C 690 162, 760 132, 840 118"
+        fill="none" stroke="#2BE4AC" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- month markers on the curve -->
+  <g fill="#0B1E1A" stroke="#2BE4AC" stroke-width="2.5">
+    <circle cx="380" cy="396" r="7"/><circle cx="620" cy="214" r="7"/>
+  </g>
+  <circle cx="840" cy="118" r="10" fill="#2BE4AC"/>
+  <circle cx="840" cy="118" r="20" fill="none" stroke="#2BE4AC" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="840" cy="118" r="31" fill="none" stroke="#2BE4AC" stroke-width="1" opacity="0.18"/>
+
+  <!-- axes -->
+  <path d="M90 520H840" stroke="#2A443C" stroke-width="2"/>
+  <path d="M90 90V520" stroke="#2A443C" stroke-width="2"/>
+
+  <!-- month labels -->
+  <g font-family="Arial, sans-serif" font-size="14" letter-spacing="1.6" fill="#5E766C">
+    <text x="84" y="551">M1</text><text x="330" y="551">M6</text><text x="812" y="551">M12</text>
+  </g>
+
+  <!-- return callout -->
+  <g>
+    <rect x="612" y="60" width="228" height="44" rx="22" fill="#12312A" stroke="#2BE4AC" stroke-width="1.5"/>
+    <text x="726" y="89" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" letter-spacing="0.6" fill="#2BE4AC">RETURN COMPOUNDING</text>
+  </g>
+</svg>

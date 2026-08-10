@@ -1,23 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A network of citation sources converging on a single recommended company">
-  <rect width="800" height="600" fill="#0B1E1A"/>
-  <g stroke="#1E332D" stroke-width="1">
-    <path d="M120 90 L400 300M250 60 L400 300M90 260 L400 300M140 430 L400 300M280 540 L400 300M470 70 L400 300M660 140 L400 300M710 300 L400 300M650 470 L400 300M480 550 L400 300"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="Trusted sources across the web converging on one recommended company">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2BE4AC" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#2BE4AC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="620" fill="#0B1E1A"/>
+  <circle cx="450" cy="310" r="250" fill="url(#glow)"/>
+
+  <!-- quiet links -->
+  <g stroke="#1C332C" stroke-width="1.2">
+    <path d="M132 118L450 310M300 70L450 310M96 300L450 310M150 500L450 310M320 566L450 310M596 74L450 310M790 172L450 310M812 330L450 310M742 512L450 310M540 574L450 310M214 214L450 310M690 420L450 310"/>
   </g>
-  <g stroke="#0E9F78" stroke-width="1.6">
-    <path d="M250 60 L400 300M90 260 L400 300M660 140 L400 300M650 470 L400 300"/>
+  <!-- cited links -->
+  <g stroke="#0E9F78" stroke-width="2">
+    <path d="M300 70L450 310M96 300L450 310M790 172L450 310M742 512L450 310"/>
   </g>
-  <g fill="#16302A" stroke="#22463C" stroke-width="1">
-    <circle cx="120" cy="90" r="16"/><circle cx="140" cy="430" r="13"/>
-    <circle cx="280" cy="540" r="15"/><circle cx="470" cy="70" r="12"/>
-    <circle cx="710" cy="300" r="14"/><circle cx="480" cy="550" r="13"/>
+
+  <!-- uncited sources -->
+  <g fill="#132B25" stroke="#22463C" stroke-width="1.4">
+    <circle cx="132" cy="118" r="15"/><circle cx="150" cy="500" r="12"/>
+    <circle cx="320" cy="566" r="14"/><circle cx="596" cy="74" r="11"/>
+    <circle cx="812" cy="330" r="13"/><circle cx="540" cy="574" r="12"/>
+    <circle cx="214" cy="214" r="10"/><circle cx="690" cy="420" r="11"/>
   </g>
-  <g fill="#0E9F78" opacity="0.9">
-    <circle cx="250" cy="60" r="17"/><circle cx="90" cy="260" r="15"/>
-    <circle cx="660" cy="140" r="18"/><circle cx="650" cy="470" r="16"/>
+
+  <!-- cited sources -->
+  <g fill="#0E9F78">
+    <circle cx="300" cy="70" r="17"/><circle cx="96" cy="300" r="15"/>
+    <circle cx="790" cy="172" r="18"/><circle cx="742" cy="512" r="16"/>
   </g>
-  <circle cx="400" cy="300" r="78" fill="#0B1E1A" stroke="#2BE4AC" stroke-width="2"/>
-  <circle cx="400" cy="300" r="96" fill="none" stroke="#2BE4AC" stroke-width="1" opacity="0.35"/>
-  <circle cx="400" cy="300" r="118" fill="none" stroke="#2BE4AC" stroke-width="1" opacity="0.15"/>
-  <rect x="374" y="274" width="18" height="18" fill="#2BE4AC"/>
-  <rect x="374" y="300" width="18" height="26" fill="#F7FAF8"/>
+  <g fill="none" stroke="#2BE4AC" stroke-width="1.2" opacity="0.5">
+    <circle cx="300" cy="70" r="26"/><circle cx="96" cy="300" r="24"/>
+    <circle cx="790" cy="172" r="27"/><circle cx="742" cy="512" r="25"/>
+  </g>
+
+  <!-- centre: the named company -->
+  <circle cx="450" cy="310" r="150" fill="none" stroke="#1E3B33" stroke-width="1"/>
+  <circle cx="450" cy="310" r="118" fill="none" stroke="#255045" stroke-width="1"/>
+  <circle cx="450" cy="310" r="86" fill="#0B1E1A" stroke="#2BE4AC" stroke-width="2.5"/>
+  <rect x="436" y="278" width="21" height="21" fill="#2BE4AC"/>
+  <rect x="436" y="308" width="21" height="31" fill="#F7FAF8"/>
 </svg>

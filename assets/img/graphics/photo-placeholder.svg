@@ -1,10 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Placeholder for a photograph">
   <rect width="800" height="1000" fill="#EDF3F0"/>
-  <g stroke="#DCE6E1" stroke-width="1">
-    <path d="M0 0 L800 1000M800 0 L0 1000"/>
+  <g stroke="#E1EAE6" stroke-width="1">
+    <path d="M0 0L800 1000M800 0L0 1000"/>
   </g>
-  <circle cx="400" cy="500" r="120" fill="none" stroke="#CFDCD6" stroke-width="1.5"/>
-  <rect x="388" y="430" width="24" height="24" fill="#0E9F78"/>
-  <rect x="388" y="466" width="24" height="34" fill="#0B1E1A"/>
-  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="3" fill="#7C8B85">PHOTO</text>
+  <rect x="60" y="60" width="680" height="880" fill="none" stroke="#D6E2DC" stroke-width="1.5" rx="8"/>
+  <g stroke="#0E9F78" stroke-width="2.5" fill="none">
+    <path d="M60 150V88a28 28 0 0 1 28-28h62"/>
+    <path d="M740 150V88a28 28 0 0 0-28-28h-62"/>
+    <path d="M60 850v62a28 28 0 0 0 28 28h62"/>
+    <path d="M740 850v62a28 28 0 0 1-28 28h-62"/>
+  </g>
+  <rect x="386" y="462" width="28" height="28" fill="#0E9F78"/>
+  <rect x="386" y="500" width="28" height="40" fill="#0B1E1A"/>
+  <text x="400" y="596" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" letter-spacing="4" fill="#8B9A94">PHOTO</text>
 </svg>
