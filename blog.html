@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog · Isolation Media</title>
-  <meta name="description" content="Plain English writing on generative engine optimisation: how AI assistants pick recommendations, how to measure share of answer, and how to win it." />
+  <meta name="description" content="Plain English writing on generative engine optimisation: how AI assistants pick recommendations, how to measure share of answer, and how businesses across Australia win it." />
   <meta name="theme-color" content="#F7FAF8" />
   <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/img/brand/avatar/favicon-ink.png" />
@@ -21,7 +21,7 @@
 
   <link rel="preload" href="assets/fonts/Montreal-Medium.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="assets/fonts/FranklinGothic-Book.otf" as="font" type="font/otf" crossorigin />
-  <link rel="stylesheet" href="assets/css/style.css?v=16" />
+  <link rel="stylesheet" href="assets/css/style.css?v=17" />
 </head>
 <body>
 
@@ -77,15 +77,47 @@
         <span class="line"><span class="line__in">Notes from inside</span></span>
         <span class="line"><span class="line__in">the <span class="ser">answers</span><span class="signal-dot">.</span></span></span>
       </h1>
-      <p class="page-hero__lede reveal">What we are learning about how AI assistants choose who to recommend, written in plain English for the people who own the companies being chosen. No jargon, no filler, no fifty tip listicles.</p>
+      <p class="page-hero__lede reveal">What we are learning about how AI assistants choose who to recommend, written in plain English for the people who own the companies being chosen. 26 articles, no jargon, no filler.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured">
+    <div class="container">
+      <a href="blog/geo-perth.html" class="feat reveal">
+        <div class="feat__media">
+          <img src="assets/img/graphics/answer-network.svg" alt="" />
+        </div>
+        <div class="feat__body">
+          <span class="feat__flag">Latest</span>
+          <span class="post__meta"><span class="cat">Australia</span><span>8 August 2026</span><span>7 min read</span></span>
+          <h2 class="feat__title">GEO in Perth: how WA businesses win AI answers</h2>
+          <p class="feat__excerpt">Perth is one of the easiest markets in Australia to become the AI recommendation in, and one of the fastest closing. Why isolation cuts both ways for WA businesses.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </a>
     </div>
   </section>
 
   <!-- POSTS -->
   <section class="posts">
     <div class="container">
-      <div class="posts__grid">
-        <a href="blog/what-is-geo.html" class="post reveal">
+      <div class="filters" id="filters" role="group" aria-label="Filter articles by topic">
+        <button type="button" class="chip active" data-filter="All" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="Australia" aria-pressed="false">Australia</button>
+        <button type="button" class="chip" data-filter="Fundamentals" aria-pressed="false">Fundamentals</button>
+        <button type="button" class="chip" data-filter="Industry" aria-pressed="false">Industry</button>
+        <button type="button" class="chip" data-filter="Measurement" aria-pressed="false">Measurement</button>
+        <button type="button" class="chip" data-filter="Practical" aria-pressed="false">Practical</button>
+        <button type="button" class="chip" data-filter="Strategy" aria-pressed="false">Strategy</button>
+        <button type="button" class="chip" data-filter="Technical" aria-pressed="false">Technical</button>
+      </div>
+      <p class="filters__count" id="filterCount" role="status"></p>
+
+      <div class="posts__grid" id="postsGrid">
+        <a href="blog/what-is-geo.html" class="post reveal" data-cat="Fundamentals">
           <span class="post__meta"><span class="cat">Fundamentals</span><span>4 August 2026</span><span>6 min read</span></span>
           <h2 class="post__title">What is GEO? A plain English guide for owners</h2>
           <p class="post__excerpt">Generative engine optimisation explained without the jargon: what changed, why the answer replaced the results page, and what it means for how customers find you.</p>
@@ -93,17 +125,39 @@
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
-
-        <a href="blog/how-ai-picks-recommendations.html" class="post reveal">
-          <span class="post__meta"><span class="cat">How engines think</span><span>21 July 2026</span><span>7 min read</span></span>
+        <a href="blog/geo-sydney.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>30 July 2026</span><span>7 min read</span></span>
+          <h2 class="post__title">GEO in Sydney: winning answers in Australia's hardest market</h2>
+          <p class="post__excerpt">Sydney categories are crowded, well documented and fiercely contested. Why generic content fails here, and what actually earns an AI recommendation.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/how-ai-picks-recommendations.html" class="post reveal" data-cat="Fundamentals">
+          <span class="post__meta"><span class="cat">Fundamentals</span><span>21 July 2026</span><span>7 min read</span></span>
           <h2 class="post__title">How AI assistants decide who to recommend</h2>
           <p class="post__excerpt">Assistants don't rank pages, they weigh evidence. A look at the signals that decide which companies get named in an answer and which get left out.</p>
           <span class="post__more">Read the article
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
-
-        <a href="blog/share-of-answer.html" class="post reveal">
+        <a href="blog/audit-your-brand-in-chatgpt.html" class="post reveal" data-cat="Practical">
+          <span class="post__meta"><span class="cat">Practical</span><span>14 July 2026</span><span>7 min read</span></span>
+          <h2 class="post__title">How to audit your own brand in ChatGPT in 30 minutes</h2>
+          <p class="post__excerpt">A step by step method for finding out what AI assistants currently say about your company, using nothing but the free versions and a spreadsheet.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-melbourne.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>7 July 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO in Melbourne: a city of specialists</h2>
+          <p class="post__excerpt">Melbourne buyers research deeply and reward specificity. Why the city's culture of specialisation makes it unusually rewarding for GEO done properly.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/share-of-answer.html" class="post reveal" data-cat="Measurement">
           <span class="post__meta"><span class="cat">Measurement</span><span>30 June 2026</span><span>5 min read</span></span>
           <h2 class="post__title">Share of answer: the number that replaces rankings</h2>
           <p class="post__excerpt">Position three on Google meant something. Being one of two names in an AI answer means more. How to measure the metric that actually tracks the new buying journey.</p>
@@ -111,8 +165,23 @@
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
-
-        <a href="blog/geo-vs-seo.html" class="post reveal">
+        <a href="blog/reviews-beat-backlinks.html" class="post reveal" data-cat="Strategy">
+          <span class="post__meta"><span class="cat">Strategy</span><span>23 June 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">Why reviews now matter more than backlinks</h2>
+          <p class="post__excerpt">Backlinks were the currency of search rankings. Answer engines weigh a different kind of evidence, and most companies are under invested in it.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-brisbane.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>16 June 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO in Brisbane: getting ahead of a growth market</h2>
+          <p class="post__excerpt">Brisbane is growing fast and its categories are still forming. Why the next few years decide which businesses become the default AI recommendation.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-vs-seo.html" class="post reveal" data-cat="Strategy">
           <span class="post__meta"><span class="cat">Strategy</span><span>9 June 2026</span><span>6 min read</span></span>
           <h2 class="post__title">GEO vs SEO: what carries over and what doesn't</h2>
           <p class="post__excerpt">Twenty years of SEO habits are not wasted, but some of them now work against you. Where the disciplines overlap, where they split, and what to stop doing.</p>
@@ -120,17 +189,47 @@
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
-
-        <a href="blog/original-data-wins-answers.html" class="post reveal">
-          <span class="post__meta"><span class="cat">Content</span><span>18 May 2026</span><span>6 min read</span></span>
+        <a href="blog/schema-markup-for-geo.html" class="post reveal" data-cat="Technical">
+          <span class="post__meta"><span class="cat">Technical</span><span>2 June 2026</span><span>7 min read</span></span>
+          <h2 class="post__title">Schema markup for GEO: what actually helps</h2>
+          <p class="post__excerpt">Structured data is having a second life. A practical guide to the markup that genuinely improves how answer engines read your business, and the kind that does nothing.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-for-local-service-businesses.html" class="post reveal" data-cat="Industry">
+          <span class="post__meta"><span class="cat">Industry</span><span>26 May 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO for local service businesses</h2>
+          <p class="post__excerpt">Trades, home services and local operators have a structural advantage in AI answers. Most are throwing it away with thin suburb pages.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/original-data-wins-answers.html" class="post reveal" data-cat="Strategy">
+          <span class="post__meta"><span class="cat">Strategy</span><span>18 May 2026</span><span>6 min read</span></span>
           <h2 class="post__title">Why original data is the fastest way into AI answers</h2>
           <p class="post__excerpt">Engines cite sources that know something the rest of the web doesn't. How one piece of genuine research can outwork a hundred blog posts, and how to produce it.</p>
           <span class="post__more">Read the article
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
-
-        <a href="blog/geo-checklist.html" class="post reveal">
+        <a href="blog/geo-adelaide.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>12 May 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO in Adelaide: small market, large advantage</h2>
+          <p class="post__excerpt">Adelaide's size is usually framed as a limitation. For generative engine optimisation it is close to ideal, and the maths explains why.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/entity-clarity.html" class="post reveal" data-cat="Technical">
+          <span class="post__meta"><span class="cat">Technical</span><span>5 May 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">Entity clarity: making engines certain who you are</h2>
+          <p class="post__excerpt">Before an engine can recommend you it has to be sure you exist, what you do and that the mentions of you elsewhere are the same company. Most businesses fail this quietly.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-checklist.html" class="post reveal" data-cat="Practical">
           <span class="post__meta"><span class="cat">Practical</span><span>27 April 2026</span><span>8 min read</span></span>
           <h2 class="post__title">A practical GEO checklist you can run this month</h2>
           <p class="post__excerpt">Ten things any company can do in the next thirty days to show up better in AI answers, ordered by effort against impact, with no tools to buy.</p>
@@ -138,7 +237,89 @@
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
+        <a href="blog/geo-gold-coast.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>21 April 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO on the Gold Coast: tourism, trades and transience</h2>
+          <p class="post__excerpt">A market where most customers are new, most decisions are fast, and almost nobody has an existing provider. Why that makes AI answers unusually powerful.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-for-ecommerce.html" class="post reveal" data-cat="Industry">
+          <span class="post__meta"><span class="cat">Industry</span><span>14 April 2026</span><span>7 min read</span></span>
+          <h2 class="post__title">GEO for ecommerce: getting your products into answers</h2>
+          <p class="post__excerpt">Shoppers are asking assistants what to buy instead of browsing category pages. What that changes about product content, reviews and comparison.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/prompts-your-customers-use.html" class="post reveal" data-cat="Practical">
+          <span class="post__meta"><span class="cat">Practical</span><span>7 April 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">The prompts your customers actually use</h2>
+          <p class="post__excerpt">Keyword research does not survive the shift to assistants. How to find the real questions buyers ask, and why they look nothing like your keyword list.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-canberra.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>31 March 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO in Canberra: procurement, professionals and precision</h2>
+          <p class="post__excerpt">A market dominated by government adjacent buyers who research carefully and buy on credentials. Why precision beats persuasion in the ACT.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-for-professional-services.html" class="post reveal" data-cat="Industry">
+          <span class="post__meta"><span class="cat">Industry</span><span>24 March 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO for professional services firms</h2>
+          <p class="post__excerpt">Accountants, consultants, agencies and advisory firms sell judgement. Making judgement legible to an answer engine is a specific discipline.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-hobart-tasmania.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>17 March 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO in Hobart and Tasmania: the thinnest data in the country</h2>
+          <p class="post__excerpt">Tasmanian categories have so little documentation that engines routinely get them wrong. That is a problem and an opportunity in equal measure.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/common-geo-mistakes.html" class="post reveal" data-cat="Practical">
+          <span class="post__meta"><span class="cat">Practical</span><span>10 March 2026</span><span>8 min read</span></span>
+          <h2 class="post__title">Nine GEO mistakes we see in almost every audit</h2>
+          <p class="post__excerpt">The recurring errors keeping companies out of AI answers, roughly in the order of how much they cost and how easily they are fixed.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-darwin-nt.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>3 March 2026</span><span>6 min read</span></span>
+          <h2 class="post__title">GEO in Darwin and the Northern Territory</h2>
+          <p class="post__excerpt">A remote market with high stakes purchases, a transient population and almost no competition for AI answers. What that combination means.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-for-b2b-saas.html" class="post reveal" data-cat="Industry">
+          <span class="post__meta"><span class="cat">Industry</span><span>24 February 2026</span><span>7 min read</span></span>
+          <h2 class="post__title">GEO for B2B SaaS: winning the comparison question</h2>
+          <p class="post__excerpt">Software buyers now build their shortlist by asking an assistant. Why the comparison answer decides your pipeline, and how it gets decided.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="blog/geo-regional-wa.html" class="post reveal" data-cat="Australia">
+          <span class="post__meta"><span class="cat">Australia</span><span>17 February 2026</span><span>7 min read</span></span>
+          <h2 class="post__title">GEO for regional WA: mining services and remote operators</h2>
+          <p class="post__excerpt">High value B2B buyers in the Pilbara, Goldfields and Mid West are increasingly starting with an AI assistant. Most suppliers are invisible to it.</p>
+          <span class="post__more">Read the article
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
       </div>
+
+      <p class="posts__empty" id="postsEmpty" hidden>No articles in that topic yet.</p>
     </div>
   </section>
 
@@ -179,6 +360,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=16"></script>
+<script src="assets/js/main.js?v=17"></script>
 </body>
 </html>

@@ -205,6 +205,41 @@
     }
   }
 
+  /* ---------- Blog topic filters ---------- */
+  var filters = document.getElementById("filters");
+  if (filters) {
+    var chips = filters.querySelectorAll(".chip");
+    var posts = document.querySelectorAll("#postsGrid .post");
+    var countEl = document.getElementById("filterCount");
+    var emptyEl = document.getElementById("postsEmpty");
+
+    function applyFilter(cat) {
+      var shown = 0;
+      posts.forEach(function (post) {
+        var match = cat === "All" || post.getAttribute("data-cat") === cat;
+        post.hidden = !match;
+        if (match) { shown++; post.classList.add("in"); }
+      });
+      if (countEl) {
+        countEl.textContent = shown + (shown === 1 ? " article" : " articles") +
+          (cat === "All" ? "" : " in " + cat);
+      }
+      if (emptyEl) emptyEl.hidden = shown > 0;
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        chips.forEach(function (c) {
+          var on = c === chip;
+          c.classList.toggle("active", on);
+          c.setAttribute("aria-pressed", String(on));
+        });
+        applyFilter(chip.getAttribute("data-filter"));
+      });
+    });
+    applyFilter("All");
+  }
+
   /* ---------- Smooth anchor offset for fixed nav ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener("click", function (e) {
