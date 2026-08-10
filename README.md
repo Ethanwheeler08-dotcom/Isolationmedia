@@ -16,6 +16,7 @@ works.
 - `results.html` stats, case studies and testimonials
 - `about.html` story, facts and values
 - `contact.html` audit request form and FAQ
+- `blog.html` article listing, with six GEO articles under `blog/`
 - `404.html` not found page
 - `assets/css/style.css` all styling
 - `assets/js/main.js` scroll reveals, animated counters, sticky nav, mobile menu, contact form
