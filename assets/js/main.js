@@ -205,6 +205,37 @@
     }
   }
 
+  /* ---------- Floating "chat with a specialist" button ---------- */
+  var fab = document.getElementById("fab");
+  if (fab) {
+    // Stand down while a full size call to action is already on screen, so the
+    // floating button never competes with the one the visitor came to find.
+    var visibleCtas = [];
+    function nearCta() { return visibleCtas.length > 0; }
+    if ("IntersectionObserver" in window) {
+      var ctaIo2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var i = visibleCtas.indexOf(e.target);
+          if (e.isIntersecting && i === -1) visibleCtas.push(e.target);
+          else if (!e.isIntersecting && i !== -1) visibleCtas.splice(i, 1);
+        });
+        drawFab();
+      }, { threshold: 0.1 });
+      document.querySelectorAll(".cta-strip, .cta, .chatcta").forEach(function (el) {
+        ctaIo2.observe(el);
+      });
+    }
+    var fabTicking = false;
+    function drawFab() {
+      fab.classList.toggle("show", window.scrollY > 500 && !nearCta());
+      fabTicking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!fabTicking) { fabTicking = true; requestAnimationFrame(drawFab); }
+    }, { passive: true });
+    drawFab();
+  }
+
   /* ---------- Blog topic filters ---------- */
   var filters = document.getElementById("filters");
   if (filters) {
