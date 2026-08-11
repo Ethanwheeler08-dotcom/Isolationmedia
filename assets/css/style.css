@@ -787,13 +787,30 @@ a.cta__meta-item:hover .cta__meta-v { color: var(--signal-deep); }
 
 /* ---------- Team ---------- */
 .team { padding: clamp(56px, 8vw, 100px) 0 clamp(80px, 12vw, 150px); }
-.team__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.tmember { display: flex; flex-direction: column; gap: 16px; }
-.tmember .media { border-radius: var(--radius); }
+.team__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.tmember {
+  display: flex; flex-direction: column; gap: 12px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: clamp(22px, 2.6vw, 30px);
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.tmember:hover { border-color: var(--ink); transform: translateY(-3px); }
+/* lettermark stands in until headshots arrive, echoing the brand square */
+.tmember__mark {
+  width: 46px; height: 46px; flex: none; display: grid; place-items: center;
+  background: var(--ink); color: var(--signal-bright); border-radius: 12px;
+  font-family: var(--display); font-size: 21px; line-height: 1; margin-bottom: 4px;
+  transition: background 0.3s var(--ease);
+}
+.tmember:hover .tmember__mark { background: var(--signal-deep); color: #fff; }
 .tmember__name { font-family: var(--display); font-size: clamp(19px, 1.9vw, 23px); letter-spacing: -0.01em; }
-.tmember__role { font-size: 13.5px; color: var(--signal-deep); font-family: var(--display); letter-spacing: 0.04em; text-transform: uppercase; margin-top: -10px; }
+.tmember__role {
+  font-size: 12.5px; color: var(--signal-deep); font-family: var(--display);
+  letter-spacing: 0.12em; text-transform: uppercase; margin-top: -8px;
+}
 .tmember__bio { font-size: 15.5px; color: var(--ink-soft); }
-@media (max-width: 780px) { .team__grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .team__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .team__grid { grid-template-columns: 1fr; } }
 
 /* ---------- Commitments ---------- */
 .pillars { border-top: 1px solid var(--line); background: var(--paper-tint); padding: clamp(56px, 8vw, 100px) 0; }
