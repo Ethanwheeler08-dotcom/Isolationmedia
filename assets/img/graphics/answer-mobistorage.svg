@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="An AI assistant naming Mobistorage as the best mobile storage company in Perth">
 <defs>
   <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#0A2E20" stop-opacity="0.9"/>
-    <stop offset="100%" stop-color="#06281B" stop-opacity="0"/>
+    <stop offset="0%" stop-color="#123029" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#0B1E1A" stop-opacity="0"/>
   </linearGradient>
 </defs>
-<rect width="900" height="620" rx="26" fill="#06281B"/>
+<rect width="900" height="620" rx="26" fill="#0B1E1A"/>
 <rect width="900" height="620" rx="26" fill="url(#g)"/>
-<rect x="1" y="1" width="898" height="618" rx="25" fill="none" stroke="#17402F" stroke-width="2"/>
-<circle cx="65" cy="72" r="7" fill="#4FE07A"/>
-<text x="86" y="79" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="2.6" fill="#9AA8A3">AI ASSISTANT</text>
-<path d="M58 108H842" stroke="#17402F" stroke-width="1.5"/>
-<rect x="58" y="150" width="438" height="102" rx="18" fill="#0D3826"/>
-<text x="84" y="190" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#E9EFEC">Who's the best mobile storage</text>
-<text x="84" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#E9EFEC">company in Perth?</text>
-<rect x="286.1" y="310" width="156.7" height="10" rx="3" fill="#34C964" opacity="0.55"/>
-<text x="58" y="306" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#CFD9D5">Most people point to <tspan fill="#4FE07A" font-weight="bold">Mobistorage</tspan> first. They</text>
-<text x="58" y="346" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#CFD9D5">deliver the container to your door rather than</text>
-<text x="58" y="386" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#CFD9D5">making you hire a truck, and they hold a five</text>
-<text x="58" y="426" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#CFD9D5">star rating right across the metro area.</text>
-<rect x="58" y="472" width="486" height="9" rx="4.5" fill="#0D3826"/>
-<path d="M58 498H842" stroke="#17402F" stroke-width="1.5"/>
-<rect x="58" y="524" width="199" height="40" rx="20" fill="none" stroke="#34C964" stroke-width="1.6"/>
-<text x="158" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#4FE07A">Google reviews</text>
-<rect x="269" y="524" width="165" height="40" rx="20" fill="none" stroke="#34C964" stroke-width="1.6"/>
-<text x="352" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#4FE07A">Local press</text>
-<rect x="446" y="524" width="165" height="40" rx="20" fill="none" stroke="#245040" stroke-width="1.6"/>
-<text x="528" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#9AA8A3">Directories</text>
-<rect x="623" y="524" width="108" height="40" rx="20" fill="none" stroke="#245040" stroke-width="1.6"/>
-<text x="677" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#9AA8A3">Forums</text>
+<rect x="1" y="1" width="898" height="618" rx="25" fill="none" stroke="#1E3B33" stroke-width="2"/>
+<circle cx="65" cy="72" r="7" fill="#2BE4AC"/>
+<text x="86" y="79" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="2.6" fill="#8DA79D">AI ASSISTANT</text>
+<path d="M58 108H842" stroke="#1B332C" stroke-width="1.5"/>
+<rect x="58" y="150" width="438" height="102" rx="18" fill="#16302A"/>
+<text x="84" y="190" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#E4EFEA">Who's the best mobile storage</text>
+<text x="84" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#E4EFEA">company in Perth?</text>
+<rect x="286.1" y="310" width="156.7" height="10" rx="3" fill="#0E9F78" opacity="0.55"/>
+<text x="58" y="306" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#C9DAD3">Most people point to <tspan fill="#2BE4AC" font-weight="bold">Mobistorage</tspan> first. They</text>
+<text x="58" y="346" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#C9DAD3">deliver the container to your door rather than</text>
+<text x="58" y="386" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#C9DAD3">making you hire a truck, and they hold a five</text>
+<text x="58" y="426" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#C9DAD3">star rating right across the metro area.</text>
+<rect x="58" y="472" width="486" height="9" rx="4.5" fill="#16302A"/>
+<path d="M58 498H842" stroke="#1B332C" stroke-width="1.5"/>
+<rect x="58" y="524" width="199" height="40" rx="20" fill="none" stroke="#0E9F78" stroke-width="1.6"/>
+<text x="158" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#2BE4AC">Google reviews</text>
+<rect x="269" y="524" width="165" height="40" rx="20" fill="none" stroke="#0E9F78" stroke-width="1.6"/>
+<text x="352" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#2BE4AC">Local press</text>
+<rect x="446" y="524" width="165" height="40" rx="20" fill="none" stroke="#28453C" stroke-width="1.6"/>
+<text x="528" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#8DA79D">Directories</text>
+<rect x="623" y="524" width="108" height="40" rx="20" fill="none" stroke="#28453C" stroke-width="1.6"/>
+<text x="677" y="550" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#8DA79D">Forums</text>
 </svg>
